@@ -44,12 +44,13 @@ body {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
 .main__content h1 {
   font-size: xx-large;
-  margin: 0;
+  margin: 10px;
 }
 
 .waves * {
@@ -73,6 +74,15 @@ body {
   background-color: var(--primary-red);
 }
 
+.horizontal__line {
+  width: 30rem;
+  height: 5px;
+  border-radius: 2.5px;
+  background: linear-gradient(110deg, var(--primary-red), var(--primary-blue));
+  background-size: 200% 200%;
+  animation: gradient-wave 3s ease infinite;
+}
+
 .waves  *:nth-of-type(n) {
   animation: wave 15s linear -1s infinite;
 }
@@ -81,15 +91,6 @@ body {
 }
 .waves  *:nth-of-type(3n) {
   animation: wave 21s linear -1s infinite;
-}
-
-.horizontal__line {
-  width: 400px;
-  height: 5px;
-  border-radius: 2.5px;
-  background: linear-gradient(110deg, var(--primary-red), var(--primary-blue));
-  background-size: 200% 200%;
-  animation: gradient-wave 3s ease infinite;
 }
 
 @keyframes gradient-wave {

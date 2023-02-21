@@ -8,7 +8,6 @@ function AboutMe() {
                 <div></div>
                 <div></div>
             </div>
-            <div className="horizontal__line"></div>
             <h1>Lorenzo Caldera Web Developer</h1>
             <div className="horizontal__line"></div>
             <div className="red__waves waves">
