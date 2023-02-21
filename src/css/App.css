@@ -15,11 +15,30 @@ body {
   padding: 0 2rem
 }
 
-.horizontal__line {
-  width: 250px;
-  height: 3px;
-  animation: color-wave 10s infinite alternate;
+.waves * {
+  width: 1000px;
+  height: 1025px;
+  background-color: #710019;
+  position: absolute;
+  opacity:0.6;
+  border-radius: 40%; 
 }
 
-@keyframes color-wave {
+.waves  *:nth-of-type(n) {
+  animation: wave 15s linear -1s infinite;
+}
+.waves  *:nth-of-type(2n) {
+  animation: wave 18s linear -1s infinite;
+}
+.waves  *:nth-of-type(3n) {
+  animation: wave 21s linear -1s infinite;
+}
+
+@keyframes identifier {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
