@@ -9,13 +9,27 @@ body {
   overflow-x: hidden;
 }
 
+.d-flex {
+  display: flex;
+}
+
+.aling-center {
+  align-items: center;
+}
+
+.hover-eff {
+  transition: transform .3s;
+}
+
+.hover-eff:hover {
+  transform: scale(1.1);
+}
+
 /* ---------------- HEADER ---------------- */
 
 .navbar {
   position: sticky;
   top: 0;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   font-size: 1rem;
   padding: 2rem 6rem;
@@ -60,8 +74,6 @@ body {
 
 #about {
   padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
 }
@@ -140,3 +152,15 @@ body {
 }
 
 /* --------------- ABOUT ME DONE ! --------------- */
+
+/* --------------- TECHNOLOGY STACK --------------- */
+
+#technology {
+
+}
+
+.tech__img > *{
+  width: 50px;
+}
+
+/* --------------- TECHNOLOGY STACK DONE ! --------------- */
