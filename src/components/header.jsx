@@ -1,10 +1,11 @@
 import React from "react"
+import Logo from "../images/logo-example.png"
 
 function Header() {
     return (
         <nav className="navbar">
-            <a>LOGO</a>
             <div>
+                <img scr={Logo} />
                 <a className="nav__item" href="/about-me">About me</a>
                 <a className="nav__item" href="/contact">Contact</a>
                 <a className="nav__item" href="/projects">Projects</a>
