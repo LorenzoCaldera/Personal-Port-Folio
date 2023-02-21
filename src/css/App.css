@@ -34,7 +34,7 @@ body {
   animation: wave 21s linear -1s infinite;
 }
 
-@keyframes identifier {
+@keyframes wave {
   0%{
     transform: rotate(0deg);
   }
