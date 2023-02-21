@@ -4,7 +4,7 @@ body {
   --primary-blue: #73BACF;
   
   background-color: var(--background);
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-family: 'Space Mono', monospace;
   margin: 0;
   overflow-x: hidden;
 }
@@ -49,7 +49,7 @@ body {
 }
 
 .main__content h1 {
-  font-size: xx-large;
+  font-size: 50px;
   margin: 10px;
 }
 
