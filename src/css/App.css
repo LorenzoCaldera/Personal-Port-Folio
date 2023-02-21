@@ -7,5 +7,19 @@ body {
 .main__content {
   padding: 1rem 0;
   display: flex;
+  align-items: center;
   justify-content: center;
+}
+
+.main__content h1 {
+  padding: 0 2rem
+}
+
+.horizontal__line {
+  width: 250px;
+  height: 3px;
+  animation: color-wave 10s infinite alternate;
+}
+
+@keyframes color-wave {
 }
