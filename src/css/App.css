@@ -4,6 +4,22 @@ body {
   margin: 0;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding: 2rem 6rem;
+}
+
+.nav__item {
+  padding: 0.75rem;
+  color: #000000;
+  text-decoration: none;
+}
+
 .main__content {
   padding: 1rem 0;
   display: flex;
@@ -16,12 +32,24 @@ body {
 }
 
 .waves * {
-  width: 1000px;
-  height: 1025px;
-  background-color: #710019;
+  width: 500px;
+  height: 500px;
   position: absolute;
+  left: -250px;
   opacity:0.6;
   border-radius: 40%; 
+  z-index: -2;
+}
+
+.blue__waves * {
+  background-color: #73BACF;
+  right: -250px;
+  left: auto;
+  top: 250px;
+}
+
+.red__waves * {
+  background-color: #710019;
 }
 
 .waves  *:nth-of-type(n) {
