@@ -6,9 +6,9 @@ function Header() {
         <nav className="navbar">
             <img src={Logo} />
             <div>
-                <a className="nav__item" href="/about-me">About me</a>
-                <a className="nav__item" href="/contact">Contact</a>
-                <a className="nav__item" href="/projects">Projects</a>
+                <a className="nav__item" href="/#about">About me</a>
+                <a className="nav__item" href="/#contact">Contact</a>
+                <a className="nav__item" href="/#projects">Projects</a>
             </div>
         </nav>
     )

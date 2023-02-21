@@ -3,6 +3,7 @@ import React from "react"
 function AboutMe() {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     let interval = null
+
     const textEffect = (e) => {
 
         // TEXT EFFECT - CREDITS TO HYPERPLEXED
@@ -31,7 +32,7 @@ function AboutMe() {
     }
 
     return (
-        <section className="main__content">
+        <section id="about">
             <div className="blue__waves waves">
                 <div></div>
                 <div></div>

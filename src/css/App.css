@@ -24,6 +24,7 @@ body {
 
 .navbar img {
   width: 3rem;
+  animation: float 5s ease 0s infinite;
 }
 
 .nav__item {
@@ -32,15 +33,32 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 450px) {
-  .navbar {
-    padding: 1rem 2rem;
+@keyframes float {
+  0% {
+    transform: translateY(-10px);
+  }
+  66% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 
-/* ---------------- HEADER DONE ---------------- */
+@media (max-width: 450px) {
+  .navbar {
+    padding: 1rem 1rem;
+  }
+  .nav__item {
+    padding: 0.8rem;
+  }
+}
 
-.main__content {
+/* ---------------- HEADER DONE ! ---------------- */
+
+/* --------------- ABOUT ME --------------- */
+
+#about {
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
@@ -48,9 +66,10 @@ body {
   justify-content: center;
 }
 
-.main__content h1 {
+#about h1 {
   font-size: 50px;
   margin: 10px;
+  cursor: default;
 }
 
 .waves * {
@@ -75,10 +94,10 @@ body {
 }
 
 .horizontal__line {
-  width: 30rem;
+  width: 35rem;
   height: 5px;
   border-radius: 2.5px;
-  background: linear-gradient(110deg, var(--primary-red), var(--primary-blue));
+  background: linear-gradient(110deg, var(--primary-red), #000000, var(--primary-blue));
   background-size: 200% 200%;
   animation: gradient-wave 3s ease infinite;
 }
@@ -113,3 +132,11 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@media (max-width: 450px) {
+  .horizontal__line {
+    width: 15rem;
+  }
+}
+
+/* --------------- ABOUT ME DONE ! --------------- */
