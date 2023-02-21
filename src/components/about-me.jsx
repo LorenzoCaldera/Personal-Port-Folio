@@ -8,7 +8,8 @@ function AboutMe() {
                 <div></div>
                 <div></div>
             </div>
-            <h1>Lorenzo Caldera Web Developer Indie</h1>
+            <h1>Lorenzo Caldera</h1>
+            <h1>Web Developer</h1>
             <div className="red__waves waves">
                 <div></div>
                 <div></div>
