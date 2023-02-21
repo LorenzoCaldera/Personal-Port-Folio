@@ -43,7 +43,6 @@ body {
 .main__content {
   padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -82,6 +81,27 @@ body {
 }
 .waves  *:nth-of-type(3n) {
   animation: wave 21s linear -1s infinite;
+}
+
+.horizontal__line {
+  width: 400px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: linear-gradient(110deg, var(--primary-red), var(--primary-blue));
+  background-size: 200% 200%;
+  animation: gradient-wave 3s ease infinite;
+}
+
+@keyframes gradient-wave {
+  0% {
+    background-position:10% 0%
+  }
+  50% {
+    background-position:91% 100%
+  }
+  100% {
+    background-position:10% 0%
+  }
 }
 
 @keyframes wave {
