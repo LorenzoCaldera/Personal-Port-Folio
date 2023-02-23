@@ -172,8 +172,10 @@ body {
 
 /* --------------- TECHNOLOGY STACK --------------- */
 
+
+
 .tech__img > *{
-  width: 50px;
+  height: 125px;
 }
 
 /* --------------- TECHNOLOGY STACK DONE ! --------------- */
