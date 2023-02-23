@@ -1,7 +1,8 @@
 body {
   --background: #DEDCE4;
-  --primary-red: #710019;
-  --primary-blue: #73BACF;
+  --c-red: #710019;
+  --c-blue: #73BACF;
+  --cblack: #161616;
   
   background-color: var(--background);
   font-family: 'Space Mono', monospace;
@@ -17,6 +18,13 @@ h1 {
 
 p {
   font-size: 2rem;
+}
+
+section:nth-of-type(2n) {
+  background-color: var(--cblack);
+  color: white;
+  padding: 6rem;
+  margin-top: 6rem;
 }
 
 .d-flex {
@@ -39,6 +47,53 @@ p {
   transform: scale(1.1);
 }
 
+/* ---------------- APP ---------------- */
+
+.waves * {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: -400px;
+  top: 250px;
+  opacity: 0.5;
+  border-radius: 40%;
+}
+
+.blue__waves * {
+  background-color: var(--c-blue);
+  right: -400px;
+  left: auto;
+  top: 400px;
+}
+
+.red__waves * {
+  background-color: var(--c-red);
+}
+
+.waves  *:nth-of-type(n) {
+  animation: wave 15s linear -1s infinite;
+}
+.waves  *:nth-of-type(2n) {
+  animation: wave 18s linear -1s infinite;
+}
+.waves  *:nth-of-type(3n) {
+  animation: wave 21s linear -1s infinite;
+}
+
+@keyframes wave {
+  0%{
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2);
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* ---------------- APP DONE ! ---------------- */
+
 /* ---------------- HEADER ---------------- */
 
 .navbar {
@@ -48,6 +103,7 @@ p {
   font-size: 1rem;
   padding: 2rem 6rem;
   background-color: var(--background);
+  z-index: 3;
 }
 
 .navbar img {
@@ -87,50 +143,18 @@ p {
 /* --------------- ABOUT ME --------------- */
 
 #about {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 60rem;
   flex-direction: column;
   justify-content: center;
-}
-
-.waves * {
-  width: 1000px;
-  height: 1000px;
-  position: absolute;
-  left: -500px;
-  top: 300px;
-  opacity: 0.5;
-  border-radius: 40%; 
-  z-index: -2;
-}
-
-.blue__waves * {
-  background-color: var(--primary-blue);
-  right: -500px;
-  left: auto;
-  top: 600px;
-}
-
-.red__waves * {
-  background-color: var(--primary-red);
 }
 
 .horizontal__line {
   width: 35rem;
   height: 5px;
   border-radius: 2.5px;
-  background: linear-gradient(110deg, var(--primary-red), #000000, var(--primary-blue));
+  background: linear-gradient(110deg, var(--c-red), #000000, var(--c-blue));
   background-size: 200% 200%;
   animation: gradient-wave 3s ease infinite;
-}
-
-.waves  *:nth-of-type(n) {
-  animation: wave 15s linear -1s infinite;
-}
-.waves  *:nth-of-type(2n) {
-  animation: wave 18s linear -1s infinite;
-}
-.waves  *:nth-of-type(3n) {
-  animation: wave 21s linear -1s infinite;
 }
 
 @keyframes gradient-wave {
@@ -142,18 +166,6 @@ p {
   }
   100% {
     background-position:10% 0%
-  }
-}
-
-@keyframes wave {
-  0%{
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg) scale(1.2);
-  }
-  100%{
-    transform: rotate(360deg) scale(1);
   }
 }
 

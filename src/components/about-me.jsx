@@ -33,21 +33,11 @@ function AboutMe() {
 
     return (
         <section id="about" className="d-flex aling-center">
-            <div className="blue__waves waves">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
             <h1
                 onMouseOver={textEffect}
                 data-value="LORENZO CALDERA WEB DEVELOPER"
             >LORENZO CALDERA WEB DEVELOPER</h1>
             <div className="horizontal__line"></div>
-            <div className="red__waves waves">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
         </section>
     )
 }
