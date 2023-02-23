@@ -11,13 +11,17 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 3rem;
   margin: 10px;
   cursor: default;
 }
 
-p {
+h2 {
   font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 section:nth-of-type(2n) {
@@ -129,7 +133,7 @@ section:nth-of-type(2n) {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .navbar {
     padding: 1rem 1rem;
   }
@@ -146,6 +150,10 @@ section:nth-of-type(2n) {
   padding: 1rem 2rem 60rem;
   flex-direction: column;
   justify-content: center;
+}
+
+#abou p {
+  max-width: 60%;
 }
 
 .horizontal__line {
@@ -169,7 +177,7 @@ section:nth-of-type(2n) {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
   .horizontal__line {
     width: 15rem;
   }
