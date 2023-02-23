@@ -9,12 +9,26 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  font-size: 50px;
+  margin: 10px;
+  cursor: default;
+}
+
+p {
+  font-size: 2rem;
+}
+
 .d-flex {
   display: flex;
 }
 
 .aling-center {
   align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .hover-eff {
@@ -76,12 +90,6 @@ body {
   padding: 1rem 2rem;
   flex-direction: column;
   justify-content: center;
-}
-
-#about h1 {
-  font-size: 50px;
-  margin: 10px;
-  cursor: default;
 }
 
 .waves * {
@@ -172,10 +180,9 @@ body {
 
 /* --------------- TECHNOLOGY STACK --------------- */
 
-
-
 .tech__img > *{
   height: 125px;
+  margin-left: 50px;
 }
 
 /* --------------- TECHNOLOGY STACK DONE ! --------------- */
