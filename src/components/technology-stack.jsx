@@ -21,6 +21,7 @@ function TechnologyStack () {
             <img src={MySQLLogo} className="hover-eff" />
             <img src={AWSLogo} className="hover-eff" />
         </div>
+        <div className="curve"></div>
     </section>
     )
 }

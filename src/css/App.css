@@ -2,7 +2,7 @@ body {
   --background: #DEDCE4;
   --c-red: #710019;
   --c-blue: #73BACF;
-  --cblack: #161616;
+  --c-black: #161616;
   
   background-color: var(--background);
   font-family: 'Space Mono', monospace;
@@ -24,10 +24,14 @@ p {
   font-size: 1.5rem;
 }
 
+section {
+  position: relative;
+}
+
 section:nth-of-type(2n) {
-  background-color: var(--cblack);
+  background-color: var(--c-black);
   color: white;
-  padding: 6rem;
+  padding: 6rem 12rem;
   margin-top: 6rem;
 }
 
@@ -51,6 +55,37 @@ section:nth-of-type(2n) {
   transform: scale(1.1);
 }
 
+.curve {
+  position: absolute;
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+.curve::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  transform: translate(85%, 60%);
+  background-color: var(--background);
+}
+
+.curve::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: var(--c-black);
+  transform: translate(-4%, 40%);
+  z-index: -1;
+}
+
 /* ---------------- APP ---------------- */
 
 .waves * {
@@ -61,6 +96,7 @@ section:nth-of-type(2n) {
   top: 250px;
   opacity: 0.5;
   border-radius: 40%;
+  z-index: -1;
 }
 
 .blue__waves * {
@@ -147,7 +183,7 @@ section:nth-of-type(2n) {
 /* --------------- ABOUT ME --------------- */
 
 #about {
-  padding: 1rem 2rem 60rem;
+  padding: 1rem 2rem;
   flex-direction: column;
   justify-content: center;
 }
@@ -199,6 +235,14 @@ section:nth-of-type(2n) {
 /* --------------- ABOUT ME DONE ! --------------- */
 
 /* --------------- TECHNOLOGY STACK --------------- */
+
+#technology h1 {
+  margin-bottom: 2rem;
+}
+
+.tech__img {
+  margin: 3rem;
+}
 
 .tech__img > *{
   height: 125px;
