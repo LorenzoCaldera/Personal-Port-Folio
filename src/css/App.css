@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   --background: #DEDCE4;
   --c-red: #710019;
@@ -5,9 +9,9 @@ body {
   --c-black: #161616;
   
   background-color: var(--background);
+  overflow-x: hidden;
   font-family: 'Space Mono', monospace;
   margin: 0;
-  overflow-x: hidden;
 }
 
 h1 {
