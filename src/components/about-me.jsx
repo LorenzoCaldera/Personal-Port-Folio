@@ -1,14 +1,7 @@
 import React from "react"
-import JSLogo from "../images/javascript-logo.png"
-import HTMLLogo from "../images/html-logo.png"
-import CSSLogo from "../images/css-logo.png"
-import ReactLogo from "../images/react-logo.png"
-import NodeJSLogo from "../images/nodeJS-logo.png"
-import MySQLLogo from "../images/MySQL-logo.png"
-import AWSLogo from "../images/AWS-logo.png"
 
 function AboutMe() {
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#$%&/=?¿<>"
     let interval = null
 
     const textEffect = (e) => {
@@ -26,7 +19,7 @@ function AboutMe() {
                     if(index < iteration) {
                         return e.target.dataset.value[index]
                     }
-                    return letters[Math.floor(Math.random() * 26)]
+                    return letters[Math.floor(Math.random() * 46)]
                 })
                 .join("")
             
@@ -35,40 +28,19 @@ function AboutMe() {
             }
             
             iteration += 1 / 3
-        }, 30)
+        }, 20)
     }
 
     return (
         <section id="about" className="d-flex aling-center">
-            <div className="blue__waves waves">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+            <h1>HI, I'M</h1>
             <h1
                 onMouseOver={textEffect}
-                data-value="LORENZO CALDERA WEB DEVELOPER"
-            >LORENZO CALDERA WEB DEVELOPER</h1>
+                data-value="LORENZO CALDERA, WEB DEVELOPER"
+            >LORENZO CALDERA, WEB DEVELOPER</h1>
             <div className="horizontal__line"></div>
-            <div className="red__waves waves">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-
-            <div id="technology">
-                <h2>TECHNOLOGY STACK</h2>
-                <p>I use the technologies most demanded by the market in web development. Full stack: server administration, front-end and back-end</p>
-                <div className="tech__img">
-                    <img src={HTMLLogo} className="hover-eff" />
-                    <img src={CSSLogo} className="hover-eff" />
-                    <img src={JSLogo} className="hover-eff" />
-                    <img src={ReactLogo} className="hover-eff" />
-                    <img src={NodeJSLogo} className="hover-eff" />
-                    <img src={MySQLLogo} className="hover-eff" />
-                    <img src={AWSLogo} className="hover-eff" />
-                </div>
-            </div>
+            <h2>FULL STACK DEVELOPER.</h2>
+            <p>Well structured and functional web pages. With a nice and functional design. Based on clean code and prevention. Practice creating and modifying web servers.</p>
         </section>
     )
 }
