@@ -10,6 +10,7 @@ import AWSLogo from "../images/AWS-logo.png"
 function TechnologyStack () {
     return (
     <section id="technology" className="d-flex aling-center flex-column">
+        <div className="curve top__curve"></div>
         <h1>TECHNOLOGY STACK</h1>
         <p>I use the technologies most demanded by the market in web development. Full stack: server administration, front-end and back-end.</p>
         <div className="tech__img">

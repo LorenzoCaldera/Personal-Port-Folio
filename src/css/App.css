@@ -28,6 +28,10 @@ section {
   position: relative;
 }
 
+section * {
+  z-index: 2;
+}
+
 section:nth-of-type(2n) {
   background-color: var(--c-black);
   color: white;
@@ -83,7 +87,11 @@ section:nth-of-type(2n) {
   height: 100%;
   background-color: var(--c-black);
   transform: translate(-4%, 40%);
-  z-index: -1;
+}
+
+.top__curve {
+  top: 0;
+  rotate: 180deg;
 }
 
 /* ---------------- APP ---------------- */
@@ -183,12 +191,12 @@ section:nth-of-type(2n) {
 /* --------------- ABOUT ME --------------- */
 
 #about {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 45rem;
   flex-direction: column;
   justify-content: center;
 }
 
-#abou p {
+#about p {
   max-width: 60%;
 }
 
@@ -247,6 +255,45 @@ section:nth-of-type(2n) {
 .tech__img > *{
   height: 125px;
   margin-left: 50px;
+}
+
+@media (max-width: 600px) {
+  .tech__img {
+    display: grid;
+    grid-gap: 50px 25px;
+    grid-template-columns: repeat(4, 3fr);
+    justify-items: center;
+  }
+
+  .tech__img * {
+    height: 50px;
+    margin: 0;
+  }
+
+  .tech__img *:nth-child(3n) {
+    grid-row: 1;
+    grid-column: 4/5;
+  }
+
+  .tech__img *:nth-child(4n) {
+    grid-row: 2;
+    grid-column: 1/5;
+  }
+
+  .tech__img *:nth-child(5n) {
+    grid-row: 3;
+    grid-column: 1/2;
+  }
+
+  .tech__img *:nth-child(3n) {
+    grid-row: 3;
+    grid-column: 2/5;
+  }
+
+  .tech__img *:nth-child(3n) {
+    grid-row: 4;
+    grid-column: 1/5;
+  }
 }
 
 /* --------------- TECHNOLOGY STACK DONE ! --------------- */
