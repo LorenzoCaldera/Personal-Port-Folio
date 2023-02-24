@@ -367,6 +367,10 @@ section:nth-of-type(2n) {
 }
 
 @media (max-width: 600px) {
+  #about {
+    align-items: flex-start;
+  }
+
   .horizontal__line {
     width: 15rem;
   }

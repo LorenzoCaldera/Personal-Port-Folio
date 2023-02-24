@@ -1,4 +1,5 @@
 import React from "react"
+import { nanoid } from "nanoid"
 import JSLogo from "../images/javascript-logo.png"
 import HTMLLogo from "../images/html-logo.png"
 import CSSLogo from "../images/css-logo.png"
@@ -12,7 +13,7 @@ function TechnologyStack () {
     const colorText = (string) => {
         let letters = string.split("")
         return letters.map((e) => {
-            return <span>{e}</span>
+            return <span key={`text-color-${nanoid()}`}>{e}</span>
         })
     }
 
