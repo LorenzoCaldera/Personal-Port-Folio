@@ -1,6 +1,7 @@
 import Header from './components/header'
 import AboutMe from './components/about-me'
 import TechnologyStack from './components/technology-stack'
+import Projects from './components/projects'
 import './css/App.css'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <AboutMe />
       <TechnologyStack />
+      <Projects />
     </div>
   )
 }
