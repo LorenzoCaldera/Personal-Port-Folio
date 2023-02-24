@@ -8,10 +8,18 @@ import MySQLLogo from "../images/MySQL-logo.png"
 import AWSLogo from "../images/AWS-logo.png"
 
 function TechnologyStack () {
+
+    const colorText = (string) => {
+        let letters = string.split("")
+        return letters.map((e) => {
+            return <span>{e}</span>
+        })
+    }
+
     return (
     <section id="technology" className="d-flex aling-center flex-column">
         <div className="curve top__curve"></div>
-        <h1>TECHNOLOGY STACK</h1>
+        <h1 className="color__text">{colorText("TECHNOLOGY STACK")}</h1>
         <p>I use the technologies most demanded by the market in web development. Full stack: server administration, front-end and back-end.</p>
         <div className="tech__img">
             <img src={HTMLLogo} className="hover-eff" />
