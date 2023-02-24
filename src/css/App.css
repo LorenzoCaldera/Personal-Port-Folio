@@ -144,6 +144,26 @@ section:nth-of-type(2n) {
   }
 }
 
+@media (max-width: 600px) {
+  .waves {
+    position: absolute;
+  }
+
+  .waves * {
+    width: 500px;
+    height: 500px;
+    top: 250px;
+    left: -250px;
+    position: absolute;
+  }
+  
+  .blue__waves *  {
+    left: auto;
+    right: -500px;
+    top: 500px;
+  }
+}
+
 /* COLOR TEXT:  */
 
 .color__text span {
@@ -215,6 +235,7 @@ section:nth-of-type(2n) {
     color: #64d65c;
   }
 }
+
 .color__text span:nth-of-type(1) {
   animation-delay: -19.8s;
 }
@@ -348,19 +369,6 @@ section:nth-of-type(2n) {
 @media (max-width: 600px) {
   .horizontal__line {
     width: 15rem;
-  }
-  
-  .waves * {
-    width: 500px;
-    height: 500px;
-    top: 250px;
-    left: -250px;
-  }
-  
-  .blue__waves *  {
-    left: auto;
-    right: -250px;
-    top: 500px;
   }
 }
 
