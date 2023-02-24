@@ -249,6 +249,10 @@ section:nth-of-type(2n) {
 }
 
 .tech__img {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 1rem;
+  justify-items: center;
   margin: 3rem;
 }
 
@@ -259,10 +263,8 @@ section:nth-of-type(2n) {
 
 @media (max-width: 600px) {
   .tech__img {
-    display: grid;
-    grid-gap: 50px 25px;
+    gap: 3rem 1.5rem;
     grid-template-columns: repeat(4, 3fr);
-    justify-items: center;
   }
 
   .tech__img * {
@@ -285,12 +287,12 @@ section:nth-of-type(2n) {
     grid-column: 1/2;
   }
 
-  .tech__img *:nth-child(3n) {
+  .tech__img *:nth-child(6n) {
     grid-row: 3;
     grid-column: 2/5;
   }
 
-  .tech__img *:nth-child(3n) {
+  .tech__img *:nth-child(7n) {
     grid-row: 4;
     grid-column: 1/5;
   }
