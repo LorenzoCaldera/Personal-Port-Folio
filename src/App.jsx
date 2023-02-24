@@ -6,12 +6,12 @@ import './css/App.css'
 function App() {
   return (
     <div className="App">
-      <div className="blue__waves waves">
+      <div className="blue__circles circles">
           <div></div>
           <div></div>
           <div></div>
       </div>
-      <div className="red__waves waves">
+      <div className="red__circles circles">
           <div></div>
           <div></div>
           <div></div>
