@@ -16,6 +16,7 @@ function AboutMe() {
             e.target.innerText = e.target.innerText
                 .split("")
                 .map((letter, index) => {
+                    if (letter === " ") return " "
                     if(index < iteration) {
                         return e.target.dataset.value[index]
                     }
