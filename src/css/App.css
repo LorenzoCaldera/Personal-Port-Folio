@@ -40,7 +40,7 @@ section * {
 section:nth-of-type(2n) {
   background-color: var(--c-black);
   color: white;
-  padding: 6rem 12rem;
+  padding: 6rem 4rem;
   margin-top: 6rem;
 }
 
@@ -54,6 +54,12 @@ section:nth-of-type(2n) {
 
 .flex-column {
   flex-direction: column;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 1rem 2rem;
+  }
 }
 
 /* ---------------- EFFECTS ---------------- */
@@ -503,6 +509,10 @@ section:nth-of-type(2n) {
 @media (max-width: 600px) {
   #about {
     align-items: flex-start;
+  }
+
+  #about p {
+    max-width: 100%;
   }
 
   .horizontal__line {
