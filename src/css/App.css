@@ -143,19 +143,19 @@ section:nth-of-type(2n) {
 }
 
 .circles  *:nth-of-type(n) {
-  animation: wave 15s linear -1s infinite;
-  -webkit-animation: wave 15s linear -1s infinite;
+  animation: circles 15s linear -1s infinite;
+  -webkit-animation: circles 15s linear -1s infinite;
 }
 .circles  *:nth-of-type(2n) {
-  animation: wave 18s linear -1s infinite;
-  -webkit-animation: wave 18s linear -1s infinite;
+  animation: circles 18s linear -1s infinite;
+  -webkit-animation: circles 18s linear -1s infinite;
 }
 .circles  *:nth-of-type(3n) {
-  animation: wave 21s linear -1s infinite;
-  -webkit-animation: wave 21s linear -1s infinite;
+  animation: circles 21s linear -1s infinite;
+  -webkit-animation: circles 21s linear -1s infinite;
 }
 
-@keyframes wave {
+@keyframes circles {
   0%{
     transform: rotate(0deg);
   }
@@ -167,7 +167,7 @@ section:nth-of-type(2n) {
   }
 }
 
-@-webkit-keyframes wave {
+@-webkit-keyframes circles {
   0%{
     transform: rotate(0deg);
   }
@@ -399,6 +399,132 @@ section:nth-of-type(2n) {
   -webkit-animation-delay: -16.8s;
 }
 
+/* LIGHT WAVES:  */
+
+.light__waves {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+}
+
+.light__waves * {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 5%;
+  filter: blur(10px);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+}
+
+.waves__left * {
+  left: -5%;
+  animation:
+  fade 1.5s ease-in 0s infinite normal,
+  move-light-waves-left 1.5s ease-in 0s infinite normal;
+  -webkit-animation:
+  fade 1.5s ease-in 0s infinite normal,
+  move-light-waves-left 1.5s ease-in 0s infinite normal;
+}
+
+.waves__right * {
+  right: -5%;
+  animation:
+      fade 1.5s ease-in 0s infinite normal,
+      move-light-waves-right 1.5s ease-in 0s infinite normal;
+  -webkit-animation:
+      fade 1.5s ease-in 0s infinite normal,
+      move-light-waves-right 1.5s ease-in 0s infinite normal;
+}
+
+.waves__right *:nth-of-type(n) {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+.waves__right *:nth-of-type(2n) {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+.waves__right *:nth-of-type(3n) {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+.waves__left *:nth-of-type(n) {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+}
+.waves__left *:nth-of-type(2n) {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+.waves__left *:nth-of-type(3n) {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.2;
+    height: 100%;
+  }
+  50% {
+    opacity: 0.03;
+  }
+  100% {
+    opacity: 0;
+    height: 25%;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.03;
+  }
+  100% {
+    opacity: 0;
+    height: 25%;
+  }
+}
+
+@keyframes move-light-waves-left {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translate(150px, 250px);
+  }
+}
+
+@-webkit-keyframes move-light-waves-left {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translate(150px, 250px);
+  }
+}
+
+@keyframes move-light-waves-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translate(-150px, 250px);
+  }
+}
+
+@-webkit-keyframes move-light-waves-right {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translate(-150px, 250px);
+  }
+}
+
 /* ---------------- EFFECTS DONE ! ---------------- */
 
 /* ---------------- HEADER ---------------- */
@@ -478,11 +604,11 @@ section:nth-of-type(2n) {
   border-radius: 2.5px;
   background: linear-gradient(110deg, var(--c-red), #000000, var(--c-blue));
   background-size: 200% 200%;
-  animation: gradient-wave 3s ease infinite;
-  -webkit-animation: gradient-wave 3s ease infinite;
+  animation: gradient-circles 3s ease infinite;
+  -webkit-animation: gradient-circles 3s ease infinite;
 }
 
-@keyframes gradient-wave {
+@keyframes gradient-circles {
   0% {
     background-position:10% 0%
   }
@@ -494,7 +620,7 @@ section:nth-of-type(2n) {
   }
 }
 
-@-webkit-keyframes gradient-wave {
+@-webkit-keyframes gradient-circles {
   0% {
     background-position:10% 0%
   }
