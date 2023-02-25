@@ -412,29 +412,30 @@ section:nth-of-type(2n) {
   content: "";
   display: block;
   height: 100%;
-  width: 5%;
+  width: 2%;
   filter: blur(10px);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
 }
 
 .waves__left * {
-  left: -5%;
+  left: 0;
   animation:
-  fade 1.5s ease-in 0s infinite normal,
-  move-light-waves-left 1.5s ease-in 0s infinite normal;
+  fade 1.5s ease-in 0s infinite alternate,
+  move-light-waves-left 1.5s ease-in 0s infinite alternate;
   -webkit-animation:
-  fade 1.5s ease-in 0s infinite normal,
-  move-light-waves-left 1.5s ease-in 0s infinite normal;
+  fade 1.5s ease-in 0s infinite alternate,
+  move-light-waves-left 1.5s ease-in 0s infinite alternate;
 }
 
 .waves__right * {
-  right: -5%;
+  right: 0;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
   animation:
-      fade 1.5s ease-in 0s infinite normal,
-      move-light-waves-right 1.5s ease-in 0s infinite normal;
+      fade 1.5s ease-in 0s infinite alternate,
+      move-light-waves-right 1.5s ease-in 0s infinite alternate;
   -webkit-animation:
-      fade 1.5s ease-in 0s infinite normal,
-      move-light-waves-right 1.5s ease-in 0s infinite normal;
+      fade 1.5s ease-in 0s infinite alternate,
+      move-light-waves-right 1.5s ease-in 0s infinite alternate;
 }
 
 .waves__right *:nth-of-type(n) {
@@ -442,33 +443,32 @@ section:nth-of-type(2n) {
   -webkit-animation-delay: 0s;
 }
 .waves__right *:nth-of-type(2n) {
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
 }
 .waves__right *:nth-of-type(3n) {
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
 }
 .waves__left *:nth-of-type(n) {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
 }
 .waves__left *:nth-of-type(2n) {
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.25s;
+  -webkit-animation-delay: 0.25s;
 }
 .waves__left *:nth-of-type(3n) {
-  animation-delay: 1s;
-  -webkit-animation-delay: 1s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
 }
 
 @keyframes fade {
   0% {
-    opacity: 0.2;
-    height: 100%;
+    opacity: 0.1;
   }
   50% {
-    opacity: 0.03;
+    opacity: 0.01;
   }
   100% {
     opacity: 0;
@@ -589,7 +589,7 @@ section:nth-of-type(2n) {
 /* --------------- ABOUT ME --------------- */
 
 #about {
-  padding-bottom: 45rem;
+  padding-bottom: 18rem;
   flex-direction: column;
   justify-content: center;
 }
