@@ -405,7 +405,7 @@ section:nth-of-type(2n) {
   position: absolute;
   width: 100%;
   height: 75%;
-  filter: blur(20px);
+  filter: blur(15px);
   z-index: 5;
 }
 
@@ -417,7 +417,7 @@ section:nth-of-type(2n) {
 }
 
 .waves__left * {
-  left: 0;
+  left: -50px;
   animation:
   fade 1.5s ease-in 0s infinite normal,
   move-light-waves-left 1.5s ease-in 0s infinite normal;
@@ -427,7 +427,7 @@ section:nth-of-type(2n) {
 }
 
 .waves__right * {
-  right: 0;
+  right: -50px;
   animation: name duration timing-function delay iteration-count direction fill-mode;
   animation:
       fade 1.5s ease-in 0s infinite normal,
@@ -465,7 +465,7 @@ section:nth-of-type(2n) {
 @keyframes fade {
   0% {
     opacity: 0;
-    width: 25px;
+    width: 50px;
     height: 100%;
   }
   5% {
@@ -477,7 +477,7 @@ section:nth-of-type(2n) {
   100% {
     opacity: 0;
     height: 25%;
-    width: 50px;
+    width: 100px;
   }
 }
 
