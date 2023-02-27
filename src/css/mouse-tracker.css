@@ -6,6 +6,7 @@
     left: 50%;
     top: 50%;
     translate: -50% -50%;
+    box-shadow: 0px 0px 1px 2px var(--background);
 }
 
 .mouse-tracker.circle{
@@ -13,7 +14,7 @@
     height: 35px;
 }
 
-.mouse-tracker.dot{
+.mouse-tracker.cursor{
     height: 10px;
     background-color: var(--c-black);
 }

@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <span className="mouse-tracker circle"></span>
-      <span className="mouse-tracker dot"></span>
+      <span className="mouse-tracker cursor"></span>
       <div className="blue__circles circles">
           <div></div>
           <div></div>
