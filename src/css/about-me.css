@@ -1,0 +1,55 @@
+#about {
+    padding-bottom: 18rem;
+  }
+  
+  #about p {
+    max-width: 60%;
+  }
+  
+  .horizontal__line {
+    width: 35rem;
+    height: 5px;
+    border-radius: 2.5px;
+    background: linear-gradient(110deg, var(--c-red), #000000, var(--c-blue));
+    background-size: 200% 200%;
+    animation: gradient-circles 3s ease infinite;
+    -webkit-animation: gradient-circles 3s ease infinite;
+  }
+  
+  @keyframes gradient-circles {
+    0% {
+      background-position:10% 0%
+    }
+    50% {
+      background-position:91% 100%
+    }
+    100% {
+      background-position:10% 0%
+    }
+  }
+  
+  @-webkit-keyframes gradient-circles {
+    0% {
+      background-position:10% 0%
+    }
+    50% {
+      background-position:91% 100%
+    }
+    100% {
+      background-position:10% 0%
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #about {
+      align-items: flex-start;
+    }
+  
+    #about p {
+      max-width: 100%;
+    }
+  
+    .horizontal__line {
+      width: 15rem;
+    }
+  }

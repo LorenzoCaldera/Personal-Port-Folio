@@ -4,7 +4,15 @@ import TechnologyStack from './components/technology-stack'
 import Projects from './components/projects'
 import ContactMe from './components/contact-me'
 import Footer from './components/footer'
+
 import './css/App.css'
+import './css/circles.css'
+import './css/color-text.css'
+import './css/light-waves.css'
+import './css/header.css'
+import './css/about-me.css'
+import './css/technology-stack.css'
+
 
 function App() {
   return (
