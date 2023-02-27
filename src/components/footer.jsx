@@ -13,9 +13,6 @@ function Footer() {
   return (
     <section id="footer">
         <div className="footer__top">
-            <div className="logo">
-                <img src={Logo} />
-            </div>
             <div className="social">
                 {/* <a href="https://www.instagram.com/"><FaInstagram /></a>
                 <a href="https://github.com/"><FaGithub /></a>
