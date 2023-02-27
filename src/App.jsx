@@ -9,12 +9,12 @@ import './css/App.css'
 function App() {
   return (
     <div className="App">
-      <div className="blue__circles circles max__height">
+      <div className="blue__circles circles">
           <div></div>
           <div></div>
           <div></div>
       </div>
-      <div className="red__circles circles max__height">
+      <div className="red__circles circles">
           <div></div>
           <div></div>
           <div></div>

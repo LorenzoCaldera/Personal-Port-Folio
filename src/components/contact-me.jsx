@@ -8,7 +8,7 @@ function ContactMe () {
         <section id="contact" className="d-flex">
             <h1>CONTACT ME</h1>
             <div className="social__media">
-                <a href="https://github.com/LorenzoCaldera">
+                <a href="https://github.com/LorenzoCaldera" style={{marginTop: "-.5rem"}}>
                     <FontAwesomeIcon icon={faGithub} />Github
                 </a>
                 <a href="https://www.instagram.com/lolocalde/">
@@ -19,16 +19,16 @@ function ContactMe () {
                 </a>
             </div>
             <form className="contact__form d-flex">
-                <div className="form__item form__message">
-                    <label>Message:</label>
-                    <input placeholder="Write here your message..."/>
-                </div>
                 <div>
                     <div className="form__item">
                         <label>Your Email:</label>
                         <input placeholder="someone@example.com"/>
                     </div>
-                    <button>Submit</button>
+                    <button className="btn__hover-eff">Submit</button>
+                </div>
+                <div className="form__item form__message">
+                    <label>Message:</label>
+                    <textarea placeholder="Write here your message..."/>
                 </div>
             </form>
         </section>
