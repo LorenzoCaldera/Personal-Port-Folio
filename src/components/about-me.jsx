@@ -33,7 +33,7 @@ function AboutMe() {
     }
 
     return (
-        <section id="about" className="d-flex aling-center justify-center flex-column">
+        <section id="about" className="d-flex align-center justify-center flex-column">
             <h1>HI, I'M</h1>
             <h1
                 onMouseOver={textEffect}

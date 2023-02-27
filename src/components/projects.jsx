@@ -3,7 +3,7 @@ import ToDoList from "../images/to-do-list.png"
 
 function Projects () {
     return (
-        <section id="projects" className="d-flex aling-center flex-column">
+        <section id="projects" className="d-flex align-center flex-column">
             <h1>PROJECTS</h1>
             <div className="d-flex">
                 <div>
