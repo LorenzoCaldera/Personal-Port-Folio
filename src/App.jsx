@@ -5,10 +5,12 @@ import Projects from './components/projects'
 import ContactMe from './components/contact-me'
 import Footer from './components/footer'
 
-import './css/App.css'
 import './css/circles.css'
 import './css/color-text.css'
 import './css/light-waves.css'
+import './css/mouse-tracker.css'
+
+import './css/App.css'
 import './css/header.css'
 import './css/about-me.css'
 import './css/technology-stack.css'
@@ -17,6 +19,8 @@ import './css/technology-stack.css'
 function App() {
   return (
     <div className="App">
+      <span className="mouse-tracker circle"></span>
+      <span className="mouse-tracker cursor"></span>
       <div className="blue__circles circles">
           <div></div>
           <div></div>
