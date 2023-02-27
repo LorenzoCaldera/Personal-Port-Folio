@@ -6,11 +6,12 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function ContactMe () {
     return (
         <section id="contact" className="d-flex">
+            <h1>CONTACT ME</h1>
             <div className="social__media">
-                <a href="">
+                <a href="https://github.com/LorenzoCaldera">
                     <FontAwesomeIcon icon={faGithub} />Github
                 </a>
-                <a href="">
+                <a href="https://www.instagram.com/lolocalde/">
                     <FontAwesomeIcon icon={faInstagram} />Instagram
                 </a>
                 <a href="">
