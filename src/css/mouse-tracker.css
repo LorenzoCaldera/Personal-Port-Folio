@@ -1,0 +1,19 @@
+.mouse-tracker {
+    border-radius: 50%;
+    z-index: 10;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+}
+
+.mouse-tracker.circle{
+    border: 2px solid var(--c-black);
+    height: 35px;
+}
+
+.mouse-tracker.dot{
+    height: 10px;
+    background-color: var(--c-black);
+}
