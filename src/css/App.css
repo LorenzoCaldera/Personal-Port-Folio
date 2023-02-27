@@ -787,7 +787,14 @@ input:focus {
   margin-right: .3rem;
 }
 
+.contact__form > *:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .contact__form button {
+  font-family: monospace;
   margin-left: auto;
   font-size: 15px;
   height: 4rem;
@@ -795,12 +802,7 @@ input:focus {
   background-color: var(--background);
   border: none;
   border-radius: 10px;
-}
-
-.contact__form > *:last-child {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  cursor: pointer;
 }
 
 .form__item {
