@@ -3,7 +3,7 @@ import Logo from "../images/logo-example.png"
 
 function Header() {
     return (
-        <nav className="navbar d-flex aling-center">
+        <nav className="navbar d-flex align-center">
             <img src={Logo} />
             <div>
                 <a className="nav__item" href="/#about">About me</a>

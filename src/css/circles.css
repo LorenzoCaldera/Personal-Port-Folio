@@ -1,0 +1,84 @@
+.circles {
+    height: 200vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: clip;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .circles * {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    left: -400px;
+    top: 250px;
+    opacity: 0.5;
+    border-radius: 40%;
+    z-index: -1;
+  }
+  
+  .blue__circles * {
+    background-color: var(--c-blue);
+    right: -400px;
+    left: auto;
+    top: 400px;
+  }
+  
+  .red__circles * {
+    background-color: var(--c-red);
+  }
+  
+  .circles  *:nth-of-type(n) {
+    animation: circles 15s linear -1s infinite;
+    -webkit-animation: circles 15s linear -1s infinite;
+  }
+  .circles  *:nth-of-type(2n) {
+    animation: circles 18s linear -1s infinite;
+    -webkit-animation: circles 18s linear -1s infinite;
+  }
+  .circles  *:nth-of-type(3n) {
+    animation: circles 21s linear -1s infinite;
+    -webkit-animation: circles 21s linear -1s infinite;
+  }
+  
+  @keyframes circles {
+    0%{
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.2);
+    }
+    100%{
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  @-webkit-keyframes circles {
+    0%{
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg) scale(1.2);
+    }
+    100%{
+      transform: rotate(360deg) scale(1);
+    }
+  }
+  
+  @media (max-width: 600px) {
+  
+    .circles * {
+      width: 500px;
+      height: 500px;
+      top: 250px;
+      left: -250px;
+    }
+    
+    .blue__circles *  {
+      left: auto;
+      right: -350px;
+      top: 500px;
+    }
+  }

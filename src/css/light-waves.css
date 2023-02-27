@@ -1,0 +1,135 @@
+.light__waves {
+    position: absolute;
+    overflow-x: hidden;
+    width: 100%;
+    height: 75%;
+    filter: blur(15px);
+    z-index: 5;
+  }
+  
+  .light__waves * {
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), white, rgba(0, 0, 0, 0));
+  }
+  
+  .waves__left * {
+    left: -50px;
+    animation:
+    fade 1.5s ease-in 0s infinite normal,
+    move-light-waves-left 1.5s ease-in 0s infinite normal;
+    -webkit-animation:
+    fade 1.5s ease-in 0s infinite normal,
+    move-light-waves-left 1.5s ease-in 0s infinite normal;
+  }
+  
+  .waves__right * {
+    right: -50px;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation:
+        fade 1.5s ease-in 0s infinite normal,
+        move-light-waves-right 1.5s ease-in 0s infinite normal;
+    -webkit-animation:
+        fade 1.5s ease-in 0s infinite normal,
+        move-light-waves-right 1.5s ease-in 0s infinite normal;
+  }
+  
+  .waves__right *:nth-of-type(n) {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+  }
+  .waves__right *:nth-of-type(2n) {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+  }
+  .waves__right *:nth-of-type(3n) {
+    animation-delay: 1s;
+    -webkit-animation-delay:1s;
+  }
+  .waves__left *:nth-of-type(n) {
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+  }
+  .waves__left *:nth-of-type(2n) {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+  }
+  .waves__left *:nth-of-type(3n) {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      width: 50px;
+      height: 100%;
+    }
+    5% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 0.02;
+    }
+    100% {
+      opacity: 0;
+      height: 25%;
+      width: 100px;
+    }
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 0;
+      width: 50px;
+      height: 100%;
+    }
+    10% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.01;
+    }
+    100% {
+      opacity: 0;
+      height: 25%;
+      width: 100px;
+    }
+  }
+  
+  @keyframes move-light-waves-left {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translate(150px, 250px);
+    }
+  }
+  
+  @-webkit-keyframes move-light-waves-left {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translate(150px, 250px);
+    }
+  }
+  
+  @keyframes move-light-waves-right {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translate(-150px, 250px);
+    }
+  }
+  
+  @-webkit-keyframes move-light-waves-right {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translate(-150px, 250px);
+    }
+  }
