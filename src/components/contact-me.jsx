@@ -18,7 +18,7 @@ function ContactMe () {
                 </a>
             </div>
             <form className="contact__form d-flex">
-                <div className="form__item">
+                <div className="form__item form__message">
                     <label>Message:</label>
                     <input placeholder="Write here your message..."/>
                 </div>
