@@ -20,13 +20,15 @@
     border-radius: 20px;
     padding: 1rem;
     box-sizing: border-box;
-}
+    max-height: 3rem;
+  }
 
-.code-btn {
+  .code-btn {
     border-radius: 20px;
     background-color: var(--c-black);
     padding: 1rem;
     color: white;
+    max-height: 3rem;
   }
   
   @media (max-width: 600px) {
