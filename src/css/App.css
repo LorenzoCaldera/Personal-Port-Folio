@@ -201,6 +201,7 @@ button {
 .btn__color-eff {
   position: relative;
   overflow: hidden;
+  max-height: 3rem;
 }
 
 .btn__color-eff * {
@@ -250,19 +251,26 @@ button {
 }
 
 .btn__color-eff .text-move * {
-  transition: all 3s;
+  transition: all 0s;
+}
+
+.btn__color-eff:hover .text-move * {
+  transition: transform 1s, opacity 2s;
 }
 
 .btn__color-eff:hover .text-move .main-text {
   transform: translateY(-50px);
+  opacity: 0;
 }
 
 .btn__color-eff .text-move .secon-text {
   transform: translateY(50px);
+  opacity: 0;
 }
 
 .btn__color-eff:hover .text-move .secon-text {
-  transform: translateY(0px);
+  transform: translateY(-18px);
+  opacity: 1;
 }
 
 /* ---------------- EFFECTS DONE ! ---------------- */
