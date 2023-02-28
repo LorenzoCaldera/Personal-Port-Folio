@@ -28,6 +28,7 @@
     padding: 1rem;
     color: white;
     max-height: 3rem;
+    width: 10rem;
   }
   
   @media (max-width: 600px) {

@@ -318,6 +318,11 @@ button {
   border-radius: 10px;
 }
 
+.form__item input {
+  color: white;
+  width: 70%;
+}
+
 .form__message {
   margin: 0 4rem;
   max-width: 60%;
