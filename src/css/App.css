@@ -61,6 +61,7 @@ input:focus, textarea:focus {
 button {
   font-family: monospace;
   font-size: 15px;
+  font-weight: 600;
   background-color: var(--c-yellow);
   border: none;
   border-radius: 10px;
@@ -160,7 +161,6 @@ button {
 .btn__hover-eff {
   position: relative;
   overflow: hidden;
-  font-weight: 500;
 }
 
 .btn__hover-eff::after, .btn__hover-eff::before {
@@ -247,6 +247,22 @@ button {
 .colors-layer .third-layer {
   top: 40px;
   background-color: var(--c-black);
+}
+
+.btn__color-eff .text-move * {
+  transition: all 3s;
+}
+
+.btn__color-eff:hover .text-move .main-text {
+  transform: translateY(-50px);
+}
+
+.btn__color-eff .text-move .secon-text {
+  transform: translateY(50px);
+}
+
+.btn__color-eff:hover .text-move .secon-text {
+  transform: translateY(0px);
 }
 
 /* ---------------- EFFECTS DONE ! ---------------- */
