@@ -327,8 +327,11 @@ button {
 .form__message textarea {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   color: var(--background);
-  width: 100%;
-  height: 75%;
+  
+  min-height: 30%;
+  max-height: 300%;
+  max-width: 100%;
+  min-width: 65%;
 }
 
 @media (max-width: 600px) {
