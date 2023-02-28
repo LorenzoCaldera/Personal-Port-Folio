@@ -211,7 +211,7 @@ button {
   height: 100px;
   width: 100%;
   transform: translateY(60px);
-  transition: transform 1.5s, width .5s, height .5s, left .5s;
+  transition: all 0s;
   border-radius: 50% 50% 0 0;
   left: 0;
   position: absolute;
@@ -221,10 +221,11 @@ button {
 
 .btn__color-eff:hover .colors-layer > * {
   transform: scale(2.1) translateY(-60px);
+  transition: transform 1.4s, width .5s, height .5s, left .5s;
 }
 
 .btn__color-eff:hover .colors-layer .first-layer {
-  height: 1px;
+  height: 10px;
 }
 
 .btn__color-eff:hover .colors-layer .second-layer {
