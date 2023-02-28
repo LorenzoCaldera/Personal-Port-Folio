@@ -11,6 +11,7 @@ import './css/light-waves.css'
 import './css/mouse-tracker.css'
 
 import './css/App.css'
+import './css/projects.css'
 import './css/header.css'
 import './css/about-me.css'
 import './css/technology-stack.css'

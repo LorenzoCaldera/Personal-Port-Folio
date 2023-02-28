@@ -8,8 +8,9 @@ body {
   --c-blue: #73BACF;
   --c-black: #161616;
   --c-yellow: #ffdc60;
+  --c-turquoise: #17f1d1;
   --scroll-height: 100vh;
-  
+
   background-color: var(--background);
   overflow-x: hidden;
   font-family: 'Space Mono', monospace;
@@ -195,24 +196,59 @@ button {
   left: 0;
 }
 
+/* BUTTON COLOR WAVE:  */
+
+.btn__color-eff {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn__color-eff * {
+ display: block;
+}
+
+.btn__color-eff .colors-layer > * {
+  height: 100px;
+  width: 100%;
+  transform: translateY(60px);
+  transition: transform 1.5s, width .5s, height .5s, left .5s;
+  border-radius: 50% 50% 0 0;
+  left: 0;
+  position: absolute;
+  transform-origin: center;
+  z-index: -1;
+}
+
+.btn__color-eff:hover .colors-layer > * {
+  transform: scale(2.1) translateY(-60px);
+}
+
+.btn__color-eff:hover .colors-layer .first-layer {
+  height: 1px;
+}
+
+.btn__color-eff:hover .colors-layer .second-layer {
+  height: 100px;
+  width: 200%;
+  left: -50%;
+}
+
+.colors-layer .first-layer {
+  top: 0;
+  background-color: var(--c-turquoise);
+}
+
+.colors-layer .second-layer {
+  top: 20px;
+  background-color: var(--c-yellow);
+}
+
+.colors-layer .third-layer {
+  top: 40px;
+  background-color: var(--c-black);
+}
+
 /* ---------------- EFFECTS DONE ! ---------------- */
-
-/* --------------- PROJECTS --------------- */
-
-#projects {
-  margin-top: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (max-width: 600px) {
-  #projects img {
-    display: none;
-  }
-}
-
-/* --------------- PROJECTS DONE ! --------------- */
 
 /* --------------- CONTACT ME: --------------- */
 
