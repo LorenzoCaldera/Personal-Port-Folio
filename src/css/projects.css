@@ -1,0 +1,38 @@
+  #projects {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #projects img {
+    height: 500px;
+  }
+  
+  .projects__buttons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 5rem;
+  }
+  
+  .visit-btn {
+    border: 2px solid var(--c-black);
+    border-radius: 20px;
+    padding: 0 1rem;
+    max-height: 3rem;
+  }
+
+  .code-btn {
+    border-radius: 20px;
+    background-color: var(--c-black);
+    padding: 1rem;
+    color: white;
+    max-height: 3rem;
+    width: 10rem;
+  }
+  
+  @media (max-width: 600px) {
+    #projects img {
+      display: none;
+    }
+  }

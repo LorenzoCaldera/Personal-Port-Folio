@@ -2,14 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  cursor: none;
+}
+
 body {
   --background: #DEDCE4;
   --c-red: #710019;
   --c-blue: #73BACF;
   --c-black: #161616;
   --c-yellow: #ffdc60;
+  --c-turquoise: #17f1d1;
   --scroll-height: 100vh;
-  
+
   background-color: var(--background);
   overflow-x: hidden;
   font-family: 'Space Mono', monospace;
@@ -20,7 +25,6 @@ body {
 h1 {
   font-size: 3rem;
   margin: 10px;
-  cursor: default;
 }
 
 h2 {
@@ -60,10 +64,10 @@ input:focus, textarea:focus {
 button {
   font-family: monospace;
   font-size: 15px;
+  font-weight: 600;
   background-color: var(--c-yellow);
   border: none;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .d-flex {
@@ -159,7 +163,6 @@ button {
 .btn__hover-eff {
   position: relative;
   overflow: hidden;
-  font-weight: 500;
 }
 
 .btn__hover-eff::after, .btn__hover-eff::before {
@@ -195,24 +198,83 @@ button {
   left: 0;
 }
 
+/* BUTTON COLOR WAVE:  */
+
+.btn__color-eff {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn__color-eff * {
+ display: block;
+}
+
+.btn__color-eff .colors-layer > * {
+  height: 100px;
+  width: 100%;
+  transform: translateY(60px);
+  transition: all 0s;
+  border-radius: 50% 50% 0 0;
+  left: 0;
+  position: absolute;
+  transform-origin: center;
+  z-index: -1;
+}
+
+.btn__color-eff:hover .colors-layer > * {
+  transform: scale(2.1) translateY(-60px);
+  transition: transform 1.4s, width .5s, height .5s, left .5s;
+}
+
+.btn__color-eff:hover .colors-layer .first-layer {
+  height: 10px;
+}
+
+.btn__color-eff:hover .colors-layer .second-layer {
+  height: 100px;
+  width: 200%;
+  left: -50%;
+}
+
+.colors-layer .first-layer {
+  top: 0;
+  background-color: var(--c-turquoise);
+}
+
+.colors-layer .second-layer {
+  top: 20px;
+  background-color: var(--c-yellow);
+}
+
+.colors-layer .third-layer {
+  top: 40px;
+  background-color: var(--c-black);
+}
+
+.btn__color-eff .text-move * {
+  transition: all 0s;
+}
+
+.btn__color-eff:hover .text-move * {
+  transition: transform 1s, opacity 2s;
+}
+
+.btn__color-eff:hover .text-move .main-text {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.btn__color-eff .text-move .secon-text {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.btn__color-eff:hover .text-move .secon-text {
+  transform: translateY(-18px);
+  opacity: 1;
+}
+
 /* ---------------- EFFECTS DONE ! ---------------- */
-
-/* --------------- PROJECTS --------------- */
-
-#projects {
-  margin-top: 6rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (max-width: 600px) {
-  #projects img {
-    display: none;
-  }
-}
-
-/* --------------- PROJECTS DONE ! --------------- */
 
 /* --------------- CONTACT ME: --------------- */
 
@@ -258,6 +320,11 @@ button {
   border-radius: 10px;
 }
 
+.form__item input {
+  color: white;
+  width: 70%;
+}
+
 .form__message {
   margin: 0 4rem;
   max-width: 60%;
@@ -267,8 +334,11 @@ button {
 .form__message textarea {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   color: var(--background);
-  width: 100%;
-  height: 75%;
+  
+  min-height: 30%;
+  max-height: 300%;
+  max-width: 100%;
+  min-width: 65%;
 }
 
 @media (max-width: 600px) {

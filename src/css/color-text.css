@@ -1,4 +1,4 @@
-.color__text span {
+  .color__text span {
     animation: color-text 30s infinite alternate forwards;
     -webkit-animation: color-text 30s infinite alternate forwards;
   }
