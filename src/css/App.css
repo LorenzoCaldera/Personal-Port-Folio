@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  cursor: none;
+}
+
 body {
   --background: #DEDCE4;
   --c-red: #710019;
@@ -21,7 +25,6 @@ body {
 h1 {
   font-size: 3rem;
   margin: 10px;
-  cursor: default;
 }
 
 h2 {
@@ -65,7 +68,6 @@ button {
   background-color: var(--c-yellow);
   border: none;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .d-flex {
