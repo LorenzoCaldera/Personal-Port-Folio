@@ -18,7 +18,7 @@ function TechnologyStack () {
     }
 
     return (
-    <section id="technology" className="d-flex align-center flex-column">
+    <section id="technology">
         <div className="light__waves waves__left">
             <div></div>
             <div></div>

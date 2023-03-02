@@ -1,3 +1,11 @@
+  #technology {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: clip;
+  } 
+  
   #technology h1 {
     margin-bottom: 2rem;
   }
