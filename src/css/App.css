@@ -6,6 +6,14 @@ html {
   cursor: none;
 }
 
+svg:hover path {
+  transition: stroke-dasharray ease-in-out .5s;
+}
+
+svg:hover path {
+  stroke-dasharray: 64 90 0 0;
+}
+
 body {
   --background: #DEDCE4;
   --c-red: #710019;
