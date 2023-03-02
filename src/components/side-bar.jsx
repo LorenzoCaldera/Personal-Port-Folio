@@ -3,15 +3,15 @@ import React from "react"
 function SideBar () {
     return (
         <React.Fragment>
-            <svg stroke="var(--c-black)" height="100" width="100" viewBox="0 0 100 100">
+            <svg viewBox="0 0 100 100" width="80">
                 <path
-                    d="m 80 20 l -50 40 h 0 v -20 h 50 m -50 -20 l 50 40 h 0 v -30 h -50 z "
-                    fill="transparent"
-                    strokeWidth="6"
-                    strokeLinejoin="round"
-                    strokeLinecap="round"
-                    strokeDasharray="0 95 49 0">
-                </path>
+                    d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
+                    strokeDasharray= "40 172"
+                />
+                <path
+                    d="m 70,50 c 0,0 -32.213436,0 -40,0 -7.786564,0 -6.428571,-4.640244 -6.428571,-8.571429 0,-5.895471 6.073743,-11.783399 12.286435,-5.570707 6.212692,6.212692 28.284272,28.284272 28.284272,28.284272"
+                    strokeDasharray="30 172"
+                />
             </svg>
             <span>
 

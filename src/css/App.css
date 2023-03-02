@@ -6,12 +6,21 @@ html {
   cursor: none;
 }
 
-svg:hover path {
-  transition: stroke-dasharray ease-in-out .5s;
+svg path {
+  fill: none;
+  stroke: var(--c-black);
+  stroke-width: 5.5;
+  stroke-linecap: round;
+  transition: stroke-dashoffset ease-in-out .5s, stroke-dasharray .5s;
 }
 
 svg:hover path {
-  stroke-dasharray: 64 90 0 0;
+  stroke-dashoffset: -132px;
+}
+
+svg:hover path:last-child {
+  stroke-dashoffset: -71px;
+  stroke-dasharray: 40 172;
 }
 
 body {
