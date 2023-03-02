@@ -94,14 +94,6 @@ button {
 
 /* ---------------- EFFECTS ---------------- */
 
-.hover-eff {
-  transition: transform .3s;
-}
-
-.hover-eff:hover {
-  transform: scale(1.1);
-}
-
 /* DOTS:  */
 
 .dots {

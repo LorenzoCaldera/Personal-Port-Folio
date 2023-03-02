@@ -6,7 +6,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 
 let mouseTracker = document.getElementsByClassName("mouse-tracker"),
-    scroll
+    scroll = 0
 
 window.onscroll = () => {
     scroll = window.scrollY
