@@ -1,3 +1,4 @@
+import React from 'react'
 import Header from './components/header'
 import AboutMe from './components/about-me'
 import TechnologyStack from './components/technology-stack'
@@ -19,7 +20,7 @@ import './css/technology-stack.css'
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
       <span className="mouse-tracker circle"></span>
       <span className="mouse-tracker cursor"></span>
       <div className="blue__circles circles">
@@ -38,7 +39,7 @@ function App() {
       <Projects />
       <ContactMe />
       <Footer />
-    </div>
+    </React.Fragment>
   )
 }
 

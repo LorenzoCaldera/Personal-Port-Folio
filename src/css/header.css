@@ -46,9 +46,9 @@
   
   @media (max-width: 600px) {
     .navbar {
-      padding: 1rem 1rem;
+      padding: 0 1rem;
     }
     .nav__item {
-      padding: 0.8rem;
+      display: none;
     }
   }
