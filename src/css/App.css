@@ -116,38 +116,15 @@ button {
 
 .curve {
   position: absolute;
-  overflow-x: clip;
-  height: 7rem;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
-
-.curve::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  transform: translate(85%, 60%);
-  background-color: var(--background);
-}
-
-.curve::after {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  background-color: var(--c-black);
-  transform: translate(-4%, 40%);
+  transform: scaleX(2);
 }
 
 .top__curve {
-  top: 0;
-  rotate: 180deg;
+  top: -100px;
+}
+
+.bottom__curve {
+  bottom: -100px
 }
 
 /* BUTTON HOVER:  */
