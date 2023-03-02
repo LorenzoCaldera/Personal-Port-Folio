@@ -18,8 +18,8 @@ function Projects () {
                                 <span className="third-layer"></span>
                             </span>
                             <span className="text-move">
-                                <span className="main-text">Source code</span>
-                                <span className="secon-text">Source code</span>
+                                <a href="https://github.com/LorenzoCaldera/Task-List" className="main-text">Source code</a>
+                                <a href="https://github.com/LorenzoCaldera/Task-List" className="secon-text">Source code</a>
                             </span>
                         </button>
                     </div>

@@ -222,6 +222,8 @@ button {
 
 .btn__color-eff .text-move * {
   transition: all 0s;
+  text-decoration: none;
+  color: var(--background);
 }
 
 .btn__color-eff:hover .text-move * {
