@@ -37,15 +37,6 @@ const observer = new IntersectionObserver(entries => {
     })
 })
 
-let hiddenElements = document.getElementsByClassName("hidden")
-console.log(hiddenElements)
+let hiddenElements = document.querySelectorAll(".hidden")
 
-for (let index = 0; index < hiddenElements.length; index++) {
-    console.log(hiddenElements[index])
-}
-
-for (let el of hiddenElements) {
-    console.log(el)
-}
-
-Array.from(hiddenElements).forEach(el => { console.log(el) })
+hiddenElements.forEach(el => observer.observe(el))
