@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './App.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
@@ -25,3 +25,17 @@ document.body.onpointermove = e => {
         left: `${clientX}px`
     }, {duration: 100, fill: "forwards"})
 }
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show")
+        } else {
+            entry.target.classList.remove("show")
+        }
+    })
+})
+
+const hiddenElements = document.querySelectorAll(".hidden")
+hiddenElements.forEach(el => observer.observe(el))
