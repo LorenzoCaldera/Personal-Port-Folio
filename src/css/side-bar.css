@@ -24,6 +24,7 @@
   }
 
   #side-bar .options {
+    z-index: 3;
     position: absolute;
     width: 85vw;
     height: 150vh;
@@ -37,11 +38,13 @@
 
   .span__item {
     text-transform: uppercase;
+    font-weight: 800;
     padding: 2rem;
-    background-color: var(--c-black);
     margin: 1rem 0 0 auto;
     width: 75%;
     position: relative;
+    color: var(--background);
+    background-color: var(--c-black);
   }
 
   .span__item::after {
@@ -57,7 +60,7 @@
   }
 
   .span__item * {
-    color: #FFFF;
+    color: inherit;
     font-size: 1.5rem;
     text-decoration: none;
     letter-spacing: 0.5rem;
