@@ -257,37 +257,6 @@ button {
 
 /* ---------------- EFFECTS DONE ! ---------------- */
 
-/* ---------------- SIDE BAR: ---------------- */
-
-#side-bar {
-  display: none;
-}
-
-.menu path {
-  fill: none;
-  stroke: var(--c-black);
-  stroke-width: 5.5;
-  stroke-linecap: round;
-  transition: stroke-dashoffset ease-in-out .5s, stroke-dasharray .5s;
-}
-
-.menu:hover path {
-  stroke-dashoffset: -132px;
-}
-
-.menu:hover path:last-child {
-  stroke-dashoffset: -71px;
-  stroke-dasharray: 40 172;
-}
-
-@media (max-width: 600px) {
-  #side-bar {
-    display: block;
-  }
-}
-
-/* ---------------- SIDE BAR DONE ! ---------------- */
-
 /* --------------- CONTACT ME: --------------- */
 
 .social__media > * {

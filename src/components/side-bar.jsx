@@ -2,7 +2,7 @@ import React from "react"
 
 function SideBar () {
     return (
-        <div id="side-bar">
+        <div id="side-bar" class="closed">
             <svg className="menu" viewBox="0 0 100 100" width="80">
                 <path
                     d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
@@ -13,8 +13,22 @@ function SideBar () {
                     strokeDasharray="20 172"
                 />
             </svg>
-            <span>
-
+            <span class="options">
+                <div>
+                    <div className="span__item">
+                        <a href="/#about">About me</a>
+                    </div>
+                    <div className="span__item">
+                        <a href="/#technology">Technology stack</a>
+                    </div>
+                    <div className="span__item">
+                        <a href="/#projects">Projects</a>
+                    </div>
+                    <div className="span__item">
+                        <a href="/#contact">Contact</a>
+                    </div>
+                </div>
+                <div><p>&copy; 2023 Lorenzo Caldera</p></div>
             </span>
         </div>
     )
