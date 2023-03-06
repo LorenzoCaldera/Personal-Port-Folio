@@ -1,0 +1,73 @@
+  #side-bar {
+    display: none;
+  }
+  
+  .menu {
+    z-index: 3;
+  }
+
+  .menu path {
+    fill: none;
+    stroke: var(--c-black);
+    stroke-width: 5.5;
+    stroke-linecap: round;
+    transition: stroke-dashoffset ease-in-out .5s, stroke-dasharray .5s;
+  }
+  
+  .menu:hover path {
+    stroke-dashoffset: -132px;
+  }
+  
+  .menu:hover path:last-child {
+    stroke-dashoffset: -71px;
+    stroke-dasharray: 40 172;
+  }
+
+  #side-bar .options {
+    z-index: 3;
+    position: absolute;
+    width: 85vw;
+    height: 150vh;
+    background-color: var(--background);
+    top: 0;
+    right: 0;
+    margin-top: 100px;
+    padding: 0 0 2rem 2rem;
+    box-sizing: border-box;
+  }
+
+  .span__item {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 2rem;
+    margin: 1rem 0 0 auto;
+    width: 75%;
+    position: relative;
+    color: var(--background);
+    background-color: var(--c-black);
+  }
+
+  .span__item::after {
+    content: "";
+    display: block;
+    background-color: var(--background);
+    width: 30px;
+    height: 30px;
+    rotate: 45deg;
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+  }
+
+  .span__item * {
+    color: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    letter-spacing: 0.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    #side-bar {
+      display: block;
+    }
+  }

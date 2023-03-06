@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './App.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
 
 let mouseTracker = document.getElementsByClassName("mouse-tracker"),
-    scroll
+    scroll = 0
 
 window.onscroll = () => {
     scroll = window.scrollY
@@ -25,3 +25,17 @@ document.body.onpointermove = e => {
         left: `${clientX}px`
     }, {duration: 100, fill: "forwards"})
 }
+
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add("show")
+//         } else {
+//             entry.target.classList.remove("show")
+//         }
+//     })
+// })
+
+// let hiddenElements = document.querySelectorAll(".hidden")
+
+// hiddenElements.forEach(el => observer.observe(el))

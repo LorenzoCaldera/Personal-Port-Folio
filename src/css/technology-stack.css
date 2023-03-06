@@ -1,3 +1,9 @@
+  #technology {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  } 
+  
   #technology h1 {
     margin-bottom: 2rem;
   }
@@ -21,6 +27,11 @@
   }
   
   @media (max-width: 600px) {
+    #technology {
+      overflow-y: clip;
+      overflow-x: hidden;
+    }
+
     .tech__img {
       gap: 3rem 1.5rem;
       grid-template-columns: repeat(4, 3fr);

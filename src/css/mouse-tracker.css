@@ -42,7 +42,7 @@
   }
 
   body:has(input:hover, textarea:hover) .mouse-tracker.circle {
-    height: 150px;
+    height: 90px;
     width: 2px;
     animation:
               start-input-hover-eff 0.5s ease-out 0.3s 1 normal forwards,
@@ -55,7 +55,7 @@
   }
 
   @keyframes start-input-hover-eff {
-    from { height: 150px; }
+    from { height: 90px; }
     to { height: 0px; }
   }
 
@@ -66,7 +66,7 @@
   }
 
   @-webkit-keyframes start-input-hover-eff {
-    from { height: 150px; }
+    from { height: 90px; }
     to { height: 0px; }
   }
 
