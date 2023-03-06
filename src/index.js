@@ -26,16 +26,16 @@ document.body.onpointermove = e => {
     }, {duration: 100, fill: "forwards"})
 }
 
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show")
-        } else {
-            entry.target.classList.remove("show")
-        }
-    })
-})
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             entry.target.classList.add("show")
+//         } else {
+//             entry.target.classList.remove("show")
+//         }
+//     })
+// })
 
-let hiddenElements = document.querySelectorAll(".hidden")
+// let hiddenElements = document.querySelectorAll(".hidden")
 
-hiddenElements.forEach(el => observer.observe(el))
+// hiddenElements.forEach(el => observer.observe(el))
