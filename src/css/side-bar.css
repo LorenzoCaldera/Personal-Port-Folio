@@ -2,6 +2,14 @@
     display: none;
   }
   
+  #side-bar.close .options{
+    width: 0;
+  }
+
+  #side-bar.open .options{
+    width: 85vw;
+  }
+
   .menu {
     z-index: 3;
   }
@@ -26,7 +34,6 @@
   #side-bar .options {
     z-index: 3;
     position: absolute;
-    width: 85vw;
     height: 150vh;
     background-color: var(--background);
     top: 0;
