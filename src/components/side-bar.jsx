@@ -4,12 +4,12 @@ function SideBar () {
     const [sideBarState, setSideBarState] = React.useState(false)
 
     const handlerToggleSideBar = () => {
-
+        setSideBarState(!setSideBarState)
     }
 
     return (
-        <div id="side-bar" class="closed">
-            <svg className="menu" viewBox="0 0 100 100" width="80" onClick={handlerToggleSideBar()}>
+        <div id="side-bar" class={`${sideBarState ? "open" : "close"}`}>
+            <svg className="menu" viewBox="0 0 100 100" width="80" onClick={handlerToggleSideBar}>
                 <path
                     d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
                     strokeDasharray= "40 172"
@@ -24,25 +24,25 @@ function SideBar () {
                     <div className="span__item">
                         <a 
                             href="/#about"
-                            onClick={handlerToggleSideBar()}
+                            onClick={handlerToggleSideBar}
                         >About me</a>
                     </div>
                     <div className="span__item">
                         <a 
                             href="/#technology"
-                            onClick={handlerToggleSideBar()}
+                            onClick={handlerToggleSideBar}
                         >Technology stack</a>
                     </div>
                     <div className="span__item">
                         <a 
                             href="/#projects"
-                            onClick={handlerToggleSideBar()}
+                            onClick={handlerToggleSideBar}
                         >Projects</a>
                     </div>
                     <div className="span__item">
                         <a 
                             href="/#contact"
-                            onClick={handlerToggleSideBar()}
+                            onClick={handlerToggleSideBar}
                         >Contact</a>
                     </div>
                 </div>
