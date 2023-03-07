@@ -5,7 +5,7 @@ function SideBar () {
 
     const handlerToggleSideBar = () => {
         console.log(sideBarState)
-        setSideBarState(!setSideBarState)
+        setSideBarState(!sideBarState)
     }
 
     return (
