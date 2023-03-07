@@ -16,16 +16,28 @@ function SideBar () {
             <span class="options">
                 <div>
                     <div className="span__item">
-                        <a href="/#about">About me</a>
+                        <a 
+                            href="/#about"
+                            onClick={closeSideBar()}
+                        >About me</a>
                     </div>
                     <div className="span__item">
-                        <a href="/#technology">Technology stack</a>
+                        <a 
+                            href="/#technology"
+                            onClick={closeSideBar()}
+                        >Technology stack</a>
                     </div>
                     <div className="span__item">
-                        <a href="/#projects">Projects</a>
+                        <a 
+                            href="/#projects"
+                            onClick={closeSideBar()}
+                        >Projects</a>
                     </div>
                     <div className="span__item">
-                        <a href="/#contact">Contact</a>
+                        <a 
+                            href="/#contact"
+                            onClick={closeSideBar()}
+                        >Contact</a>
                     </div>
                 </div>
                 <div><p>&copy; 2023 Lorenzo Caldera</p></div>
