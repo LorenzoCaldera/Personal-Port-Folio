@@ -2,11 +2,10 @@
     display: none;
   }
   
-  #side-bar.close .options *,
   #side-bar .options {
     transition: width .5s;
   }
-
+  
   #side-bar.close .options,
   #side-bar.close .options *,
   #side-bar.close .options *::after {
