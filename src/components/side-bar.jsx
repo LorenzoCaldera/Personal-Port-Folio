@@ -10,6 +10,7 @@ function SideBar () {
 
     return (
         <div id="side-bar" className={`${sideBarState ? "open" : "close"}`}>
+            <div class="blur"></div>
             <svg className="menu" viewBox="0 0 100 100" width="80" onClick={handlerToggleSideBar}>
                 <path
                     d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
