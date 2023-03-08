@@ -2,6 +2,11 @@
     display: none;
   }
   
+  #side-bar.close .options *,
+  #side-bar .options {
+    transition: width .5s;
+  }
+
   #side-bar.close .options,
   #side-bar.close .options *,
   #side-bar.close .options *::after {
@@ -26,11 +31,11 @@
     transition: stroke-dashoffset ease-in-out .5s, stroke-dasharray .5s;
   }
   
-  .menu:hover path {
+  #side-bar.open .menu path {
     stroke-dashoffset: -132px;
   }
   
-  .menu:hover path:last-child {
+  #side-bar.open .menu path:last-child {
     stroke-dashoffset: -71px;
     stroke-dasharray: 40 172;
   }
