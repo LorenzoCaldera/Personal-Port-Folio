@@ -1,9 +1,16 @@
 import React from "react"
 
 function SideBar () {
+    const [sideBarState, setSideBarState] = React.useState(false)
+
+    const handlerToggleSideBar = () => {
+        console.log(sideBarState)
+        setSideBarState(!sideBarState)
+    }
+
     return (
-        <div id="side-bar" class="closed">
-            <svg className="menu" viewBox="0 0 100 100" width="80">
+        <div id="side-bar" className={`${sideBarState ? "open" : "close"}`}>
+            <svg className="menu" viewBox="0 0 100 100" width="80" onClick={handlerToggleSideBar}>
                 <path
                     d="m 30,33 h 40 c 13.100415,0 14.380204,31.80258 6.899646,33.421777 -24.612039,5.327373 9.016154,-52.337577 -12.75751,-30.563913 l -28.284272,28.284272"
                     strokeDasharray= "40 172"
@@ -16,16 +23,28 @@ function SideBar () {
             <span class="options">
                 <div>
                     <div className="span__item">
-                        <a href="/#about">About me</a>
+                        <a 
+                            href="/#about"
+                            onClick={handlerToggleSideBar}
+                        >About me</a>
                     </div>
                     <div className="span__item">
-                        <a href="/#technology">Technology stack</a>
+                        <a 
+                            href="/#technology"
+                            onClick={handlerToggleSideBar}
+                        >Technology stack</a>
                     </div>
                     <div className="span__item">
-                        <a href="/#projects">Projects</a>
+                        <a 
+                            href="/#projects"
+                            onClick={handlerToggleSideBar}
+                        >Projects</a>
                     </div>
                     <div className="span__item">
-                        <a href="/#contact">Contact</a>
+                        <a 
+                            href="/#contact"
+                            onClick={handlerToggleSideBar}
+                        >Contact</a>
                     </div>
                 </div>
                 <div><p>&copy; 2023 Lorenzo Caldera</p></div>

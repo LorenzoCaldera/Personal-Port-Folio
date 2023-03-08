@@ -2,6 +2,22 @@
     display: none;
   }
   
+  #side-bar .options {
+    transition: width .5s;
+  }
+  
+  #side-bar.close .options,
+  #side-bar.close .options *,
+  #side-bar.close .options *::after {
+    width: 0;
+    padding: 0;
+    font-size: 0;
+  }
+
+  #side-bar.open .options {
+    width: 85vw;
+  }
+
   .menu {
     z-index: 3;
   }
@@ -14,11 +30,11 @@
     transition: stroke-dashoffset ease-in-out .5s, stroke-dasharray .5s;
   }
   
-  .menu:hover path {
+  #side-bar.open .menu path {
     stroke-dashoffset: -132px;
   }
   
-  .menu:hover path:last-child {
+  #side-bar.open .menu path:last-child {
     stroke-dashoffset: -71px;
     stroke-dasharray: 40 172;
   }
@@ -26,7 +42,6 @@
   #side-bar .options {
     z-index: 3;
     position: absolute;
-    width: 85vw;
     height: 150vh;
     background-color: var(--background);
     top: 0;
