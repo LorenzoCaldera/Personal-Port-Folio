@@ -276,12 +276,12 @@ button {
   font-size: 15px;
 }
 
-.contact__form {
+#contact__form {
   max-width: 50%;
   width: -webkit-fill-available;
 }
 
-.contact__form > *:last-child {
+#contact__form > *:last-child {
   margin-left: 3rem;
   min-width: 50%;
   display: flex;
@@ -289,7 +289,7 @@ button {
   justify-content: space-between;
 }
 
-.contact__form button {
+#contact__form button {
   margin-left: auto;
   height: 4rem;
   width: 100%;
@@ -342,12 +342,12 @@ button {
     display: none;
   }
 
-  .contact__form {
+  #contact__form {
     max-width: 100%;
     flex-direction: column;
   }
   
-  .contact__form > *:last-child {
+  #contact__form > *:last-child {
     margin-left: 0;
     min-width: 10%;
     display: block;
@@ -363,7 +363,7 @@ button {
     margin: 1rem 0;
   }
 
-  .contact__form button {
+  #contact__form button {
     margin-top: 1rem;
   }
 }

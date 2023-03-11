@@ -4,7 +4,6 @@ function SideBar () {
     const [sideBarState, setSideBarState] = React.useState(false)
 
     const handlerToggleSideBar = () => {
-        console.log(sideBarState)
         setSideBarState(!sideBarState)
     }
 

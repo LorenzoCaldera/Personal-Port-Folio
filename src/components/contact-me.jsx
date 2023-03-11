@@ -18,15 +18,25 @@ function ContactMe () {
                     <FontAwesomeIcon icon={faEnvelope} /><p>Email</p>
                 </a>
             </div>
-            <form className="contact__form d-flex">
+            <form id="contact__form" className="d-flex">
                 <div className="form__item form__message">
                     <label>Message:</label>
-                    <textarea placeholder="Write here your message..."/>
+                    <textarea
+                        required
+                        name="message"
+                        type="text"
+                        form="contact__form"
+                        placeholder="Write here your message..."/>
                 </div>
                 <div>
                     <div className="form__item">
                         <label>Your Email:</label>
-                        <input placeholder="someone@example.com"/>
+                        <input 
+                            laceholder="someone@example.com"
+                            type="email"
+                            name="email"
+                            form="contact__form"
+                        />
                     </div>
                     <button className="btn__hover-eff">Submit</button>
                 </div>
