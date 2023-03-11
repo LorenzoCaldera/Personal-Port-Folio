@@ -364,6 +364,10 @@ button {
     max-height: 100%;
   }
 
+  .form__message textarea {
+    width: 100%;
+  }
+
   .form__item {
     margin: 1rem 0;
   }
