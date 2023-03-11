@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFreeCodeCamp, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ContactMe () {
@@ -13,6 +13,9 @@ function ContactMe () {
                 </a>
                 <a href="https://www.instagram.com/lolocalde/">
                     <FontAwesomeIcon icon={faInstagram} /><p>Instagram</p>
+                </a>
+                <a href="https://www.freecodecamp.org/loloix_">
+                    <FontAwesomeIcon icon={faFreeCodeCamp} /><p>freeCodeCamp</p>
                 </a>
                 <a href="">
                     <FontAwesomeIcon icon={faEnvelope} /><p>Email</p>
