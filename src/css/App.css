@@ -324,6 +324,10 @@ button {
 }
 
 @media (max-width: 600px) {
+  * {
+    cursor: default;
+  }
+
   #contact {
     padding: 6rem 2rem;
     flex-direction: column;
