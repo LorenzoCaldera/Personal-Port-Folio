@@ -279,6 +279,7 @@ button {
 #contact__form {
   max-width: 50%;
   width: -webkit-fill-available;
+  display: flex;
 }
 
 #contact__form > *:last-child {

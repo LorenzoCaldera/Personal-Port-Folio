@@ -18,7 +18,7 @@ function ContactMe () {
                     <FontAwesomeIcon icon={faEnvelope} /><p>Email</p>
                 </a>
             </div>
-            <form id="contact__form" className="d-flex">
+            <form id="contact__form" method="get" onSubmit={(event) => {event.preventDefault()}}>
                 <div className="form__item form__message">
                     <label>Message:</label>
                     <textarea
@@ -26,12 +26,14 @@ function ContactMe () {
                         name="message"
                         type="text"
                         form="contact__form"
-                        placeholder="Write here your message..."/>
+                        placeholder="Write here your message..."
+                    />
                 </div>
                 <div>
                     <div className="form__item">
                         <label>Your Email:</label>
                         <input 
+                            required
                             laceholder="someone@example.com"
                             type="email"
                             name="email"
