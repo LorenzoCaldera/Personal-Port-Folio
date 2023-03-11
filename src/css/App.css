@@ -97,7 +97,7 @@ button {
 /* DOTS:  */
 
 .dots {
-  background-image: linear-gradient(270deg, var(--c-red), var(--c-blue));
+  background: linear-gradient(270deg, var(--c-red), var(--c-blue));
 }
 
 .dots::after {
@@ -276,12 +276,13 @@ button {
   font-size: 15px;
 }
 
-.contact__form {
+#contact__form {
   max-width: 50%;
   width: -webkit-fill-available;
+  display: flex;
 }
 
-.contact__form > *:last-child {
+#contact__form > *:last-child {
   margin-left: 3rem;
   min-width: 50%;
   display: flex;
@@ -289,7 +290,7 @@ button {
   justify-content: space-between;
 }
 
-.contact__form button {
+#contact__form button {
   margin-left: auto;
   height: 4rem;
   width: 100%;
@@ -323,6 +324,10 @@ button {
 }
 
 @media (max-width: 600px) {
+  * {
+    cursor: default;
+  }
+
   #contact {
     padding: 6rem 2rem;
     flex-direction: column;
@@ -342,12 +347,12 @@ button {
     display: none;
   }
 
-  .contact__form {
+  #contact__form {
     max-width: 100%;
     flex-direction: column;
   }
   
-  .contact__form > *:last-child {
+  #contact__form > *:last-child {
     margin-left: 0;
     min-width: 10%;
     display: block;
@@ -359,11 +364,15 @@ button {
     max-height: 100%;
   }
 
+  .form__message textarea {
+    width: 100%;
+  }
+
   .form__item {
     margin: 1rem 0;
   }
 
-  .contact__form button {
+  #contact__form button {
     margin-top: 1rem;
   }
 }

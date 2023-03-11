@@ -6,7 +6,7 @@
   }
   
   #projects img {
-    height: 500px;
+    height: 35vw;
   }
   
   .projects__buttons {
@@ -20,6 +20,11 @@
     border-radius: 20px;
     padding: 0 1rem;
     max-height: 3rem;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+    filter: grayscale(50%)
   }
 
   .code-btn {
