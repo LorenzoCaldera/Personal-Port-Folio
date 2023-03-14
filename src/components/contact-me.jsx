@@ -1,4 +1,5 @@
 import React from "react";
+import scrollEff from "../assets/scroll-eff";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFreeCodeCamp, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -6,6 +7,11 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function ContactMe () {
     const [emailState, setEmail] = React.useState("disabled")
     const [messageState, setMessage] = React.useState("disabled")
+    const [contactClass, setContactClass] = React.useState("disabled")
+
+    const contactRef = React.useRef()
+
+    scrollEff([contactRef], [setContactClass])
 
     const handlerEmail = e => {
         const emailRegex = new RegExp('\\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,4}\\b', "gi");
@@ -25,7 +31,7 @@ function ContactMe () {
     }
 
     return (
-        <section id="contact" className="d-flex">
+        <section ref={contactRef} id="contact" className={`d-flex ${contactClass}`}>
             <h1>CONTACT ME</h1>
             <address className="social__media">
                 <a target="_blank" href="https://github.com/LorenzoCaldera">
