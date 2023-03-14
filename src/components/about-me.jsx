@@ -1,8 +1,24 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 function AboutMe() {
+    const [currentClass, setClass] = React.useState("show")
+    const welcomeRef = React.useRef()
+
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#%?<>"
     let interval = null
+
+    useEffect(() => {
+        const handlerScroll = () => {
+            const element = welcomeRef.current
+            const { y, height } = element.getBoundingClientRect()
+            const currentClass = y + height < 0 ? "hidden" : "show"
+            console.log(y, height, y + height, currentClass)
+            setClass(currentClass)
+        }
+    
+        window.addEventListener('scroll', handlerScroll)
+        return () => {window.removeEventListener('scroll', handlerScroll)}
+    })
 
     const textEffect = (e) => {
 
@@ -33,8 +49,8 @@ function AboutMe() {
     }
     return (
         <section id="about">
-            <header className="welcome">
-                <div>
+            <header ref={welcomeRef} className={`welcome ${currentClass}`}>
+                <div style={{opacity: 1}}>
                     <h1>WELCOME! I'M</h1>
                     <h1
                         onMouseOver={textEffect}

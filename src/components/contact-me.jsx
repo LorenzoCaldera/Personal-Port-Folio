@@ -43,7 +43,7 @@ function ContactMe () {
             </address>
             <form id="contact__form" method="get" onSubmit={(event) => {event.preventDefault()}}>
                 <div className={`form__item form__message ${messageState}`}>
-                    <label for="message">Message:</label>
+                    <label htmlFor="message">Message:</label>
                     <textarea
                         required
                         id="message"
@@ -56,7 +56,7 @@ function ContactMe () {
                 </div>
                 <div>
                     <div className={`form__item ${emailState}`}>
-                        <label for="email">Your Email:</label>
+                        <label htmlFor="email">Your Email:</label>
                         <input
                             required
                             onChange={handlerEmail}
