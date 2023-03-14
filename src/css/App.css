@@ -115,16 +115,32 @@ button {
 /* SCROLL EFFECT:  */
 
 .hidden {
-  opacity: 0;
+  animation: hidden 3s ease 0s 1 normal forwards;
 }
 
 .show {
-  animation: show 3s ease-in 0s 1 normal forwards;
+  animation: show 3s ease 0s 1 normal forwards;
 }
 
 @keyframes show {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-10%);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+  }
+}
+
+@keyframes hidden {
+  100% {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translateX(-10%);
+  }
 }
 
 /* CURVE:  */

@@ -1,22 +1,28 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 function AboutMe() {
-    const [currentClass, setClass] = React.useState("show")
+    const [welcomeClass, setWelcomeClass] = React.useState("show")
     const welcomeRef = React.useRef()
+
+    const [parragraphClass, setparragraphClass] = React.useState("show")
+    const parragraphRef = React.useRef()
 
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#%?<>"
     let interval = null
 
-    useEffect(() => {
-        const handlerScroll = () => {
-            const element = welcomeRef.current
-            const { y, height } = element.getBoundingClientRect()
-            const currentClass = y + height < 0 ? "hidden" : "show"
-            console.log(y, height, y + height, currentClass)
-            setClass(currentClass)
+    React.useEffect(() => {
+        const handlerScroll = (references, callback) => {
+            const elements = [...references]
+            const setClass = [...callback]
+
+            elements.forEach((element, index) => {
+                const { y } = element.current.getBoundingClientRect()
+                const currentClass = (y < -window.innerHeight || y  > window.innerHeight) ? "hidden" : "show"
+                setClass[index](currentClass)
+            })
         }
     
-        window.addEventListener('scroll', handlerScroll)
+        window.addEventListener('scroll', () => {handlerScroll([welcomeRef, parragraphRef], [setWelcomeClass, setparragraphClass])})
         return () => {window.removeEventListener('scroll', handlerScroll)}
     })
 
@@ -44,13 +50,13 @@ function AboutMe() {
                 clearInterval(interval)
             }
             
-            iteration += 1 / 5
+            iteration += 1 / 3
         }, 30)
     }
     return (
         <section id="about">
-            <header ref={welcomeRef} className={`welcome ${currentClass}`}>
-                <div style={{opacity: 1}}>
+            <header ref={welcomeRef} className={`welcome ${welcomeClass}`}>
+                <div>
                     <h1>WELCOME! I'M</h1>
                     <h1
                         onMouseOver={textEffect}
@@ -60,10 +66,10 @@ function AboutMe() {
                     <h2>FULL STACK DEVELOPER.</h2>
                 </div>
             </header>
-            <p> Hi there! I'm a 17-year-old web developer passionate about programming and web design. My main focus is on creating functional web pages with an attractive design and clean, readable code.</p>
-            <p> As a full-stack developer, I have skills in both front-end and back-end development. This means that I can create the structure and functionality of the web page, as well as design the user interface and user experience. Additionally, I can configure servers to make the web pages available online for everyone.</p>
-            <p> I strive to stay up-to-date with the latest trends and technologies in web development to ensure that my web pages are always modern and relevant.</p>
-            <p> If you need a web developer who focuses on quality and efficiency, don't hesitate to get in touch with me! I'm always willing to work on new projects and excited to see how I can help you achieve your online goals.</p>
+            <p ref={parragraphRef} className={parragraphClass}> Hi there! I'm a 17-year-old web developer passionate about programming and web design. My main focus is on creating functional web pages with an attractive design and clean, readable code.</p>
+            <p ref={parragraphRef} className={parragraphClass}> As a full-stack developer, I have skills in both front-end and back-end development. This means that I can create the structure and functionality of the web page, as well as design the user interface and user experience. Additionally, I can configure servers to make the web pages available online for everyone.</p>
+            <p ref={parragraphRef} className={parragraphClass}> I strive to stay up-to-date with the latest trends and technologies in web development to ensure that my web pages are always modern and relevant.</p>
+            <p ref={parragraphRef} className={parragraphClass}> If you need a web developer who focuses on quality and efficiency, don't hesitate to get in touch with me! I'm always willing to work on new projects and excited to see how I can help you achieve your online goals.</p>
         </section>
     )
 }
