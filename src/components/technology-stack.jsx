@@ -39,13 +39,13 @@ function TechnologyStack () {
         <h1 className="color__text">{colorText("TECHNOLOGY STACK")}</h1>
         <p>I use the technologies most demanded by the market in web development. Full stack: server administration, front-end and back-end.</p>
         <div className="tech__img">
-            <img src={HTMLLogo} />
-            <img src={CSSLogo} />
-            <img src={JSLogo} />
-            <img src={ReactLogo} />
-            <img src={NodeJSLogo} />
-            <img src={MySQLLogo} />
-            <img src={AWSLogo} />
+            <img alt="HTML logo" src={HTMLLogo} />
+            <img alt="CSS logo" src={CSSLogo} />
+            <img alt="JavaScript logo" src={JSLogo} />
+            <img alt="React logo" src={ReactLogo} />
+            <img alt="NodeJS logo" src={NodeJSLogo} />
+            <img alt="MySQL logo" src={MySQLLogo} />
+            <img alt="AWS logo" src={AWSLogo} />
         </div>
     </section>
     )

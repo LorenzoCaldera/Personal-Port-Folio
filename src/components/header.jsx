@@ -7,7 +7,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 function Header() {
     return (
         <nav className="navbar">
-            <img src={Logo} />
+            <img alt="page-logo" src={Logo} />
             <div>
                 <a className="nav__item" href="/#about">About me</a>
                 <a className="nav__item" href="/#technology">Technology stack</a>
