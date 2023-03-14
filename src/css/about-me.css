@@ -24,6 +24,7 @@
     border-radius: 20px;
     box-shadow: 0 0 50px var(--c-black);
     align-items: center;
+    text-align: center;
     display: flex;
     position: relative;
     flex-direction: column;
