@@ -19,7 +19,7 @@ function SideBar () {
                     strokeDasharray="20 172"
                 />
             </svg>
-            <span class="options">
+            <span className="options">
                 <div>
                     <div className="span__item">
                         <a 

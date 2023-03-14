@@ -9,6 +9,25 @@
   #about p {
     max-width: 60%;
   }
+
+  .welcome {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: -100px;
+  }
+
+  .welcome > div {
+    backdrop-filter: blur(2px);
+    border: 3px solid #000000d9;
+    padding: 5rem 12rem;
+    border-radius: 20px;
+    box-shadow: 0 0 50px var(--c-black);
+    align-items: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
   
   .horizontal__line {
     width: 35rem;
@@ -45,15 +64,20 @@
   }
   
   @media (max-width: 600px) {
-    #about {
-      align-items: flex-start;
-    }
-  
     #about p {
       max-width: 100%;
     }
   
     .horizontal__line {
       width: 15rem;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .welcome > div {
+      border: none;
+      backdrop-filter: none;
+      padding: 0;
+      box-shadow: none;
     }
   }

@@ -19,8 +19,8 @@ function Projects () {
                                     <span className="third-layer"></span>
                                 </span>
                                 <span className="text-move">
-                                    <a className="main-text">Source code</a>
-                                    <a className="secon-text">Source code</a>
+                                    <div className="main-text">Source code</div>
+                                    <div className="secon-text">Source code</div>
                                 </span>
                             </button>
                         </a>

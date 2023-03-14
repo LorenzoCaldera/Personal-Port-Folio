@@ -257,127 +257,6 @@ button {
 
 /* ---------------- EFFECTS DONE ! ---------------- */
 
-/* --------------- CONTACT ME: --------------- */
-
-.social__media > * {
-  padding: 1rem 2rem;
-  width: 8rem;
-  margin: .5rem;
-  border-radius: 10px;
-  border: solid 2px var(--c-yellow);
-  background-color: var(--c-yellow);
-  color: var(--c-black);
-  display: flex;
-  justify-content: center;
-}
-
-.social__media > * > p {
-  margin: 0 0 0 .3rem;
-  font-size: 15px;
-}
-
-#contact__form {
-  max-width: 50%;
-  width: -webkit-fill-available;
-  display: flex;
-}
-
-#contact__form > *:last-child {
-  margin-left: 3rem;
-  min-width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#contact__form button {
-  margin-left: auto;
-  height: 4rem;
-  width: 100%;
-}
-
-.form__item {
-  padding: 1rem;
-  border: 2px solid;
-  border-radius: 10px;
-}
-
-.form__item input {
-  color: white;
-  width: 70%;
-}
-
-.form__message {
-  margin: 0 4rem;
-  max-width: 60%;
-  max-height: 100%;
-}
-
-.form__message textarea {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-  color: var(--background);
-  
-  min-height: 30%;
-  max-height: 300%;
-  max-width: 100%;
-  min-width: 65%;
-}
-
-@media (max-width: 600px) {
-  * {
-    cursor: default;
-  }
-
-  #contact {
-    padding: 6rem 2rem;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social__media {
-    display: flex;
-  }
-  
-  .social__media > * {
-    padding: 1rem 0;
-    width: 4rem;
-  }
-
-  .social__media > * > p {
-    display: none;
-  }
-
-  #contact__form {
-    max-width: 100%;
-    flex-direction: column;
-  }
-  
-  #contact__form > *:last-child {
-    margin-left: 0;
-    min-width: 10%;
-    display: block;
-  }
-
-  .form__message {
-    margin: 0 1rem;
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  .form__message textarea {
-    width: 100%;
-  }
-
-  .form__item {
-    margin: 1rem 0;
-  }
-
-  #contact__form button {
-    margin-top: 1rem;
-  }
-}
-/* --------------- CONTACT ME DONE ! --------------- */
-
 /* --------------- FOOTER :  --------------- */
 
 #footer img {
@@ -389,18 +268,18 @@ button {
 }
 
 .footer__bottom button {
+  backdrop-filter: blur(2px);
+  border: 3px solid var(--c-black);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px black;
   font-size: 20px;
   padding: 5px;
-  transition: transform .3s, box-shadow .3s;
-  border: 2px solid var(--background);
-  background-color: var(--c-black);
-  color: WHITE;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px white;
+  transition: transform .3s;
+  background-color: #00000005;
+  color: black;
 }
 
 .footer__bottom button:hover {
-  box-shadow: 1px 1px 15px white;
   transform: scale(1.1);
 }
 

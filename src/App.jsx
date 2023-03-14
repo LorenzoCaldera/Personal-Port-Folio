@@ -17,6 +17,7 @@ import './css/header.css'
 import './css/about-me.css'
 import './css/technology-stack.css'
 import './css/side-bar.css'
+import './css/contact-me.css'
 
 function App() {
   return (

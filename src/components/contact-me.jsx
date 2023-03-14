@@ -4,10 +4,30 @@ import { faFreeCodeCamp, faGithub, faInstagram } from '@fortawesome/free-brands-
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ContactMe () {
+    const [emailState, setEmail] = React.useState("disabled")
+    const [messageState, setMessage] = React.useState("disabled")
+
+    const handlerEmail = e => {
+        const emailRegex = new RegExp('\\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,4}\\b', "gi");
+        if (emailRegex.test(e.target.value)) {
+            setEmail("")
+        } else {
+            setEmail("disabled")
+        }
+    }
+
+    const handlerMessage = e => {
+        if (e.target.value !== "") {
+            setMessage("")
+        } else {
+            setMessage("disabled")
+        }
+    }
+
     return (
         <section id="contact" className="d-flex">
             <h1>CONTACT ME</h1>
-            <div className="social__media">
+            <address className="social__media">
                 <a target="_blank" href="https://github.com/LorenzoCaldera">
                     <FontAwesomeIcon icon={faGithub} /><p>Github</p>
                 </a>
@@ -20,12 +40,14 @@ function ContactMe () {
                 <a target="_blank" href="">
                     <FontAwesomeIcon icon={faEnvelope} /><p>Email</p>
                 </a>
-            </div>
+            </address>
             <form id="contact__form" method="get" onSubmit={(event) => {event.preventDefault()}}>
-                <div className="form__item form__message">
-                    <label>Message:</label>
+                <div className={`form__item form__message ${messageState}`}>
+                    <label for="message">Message:</label>
                     <textarea
                         required
+                        id="message"
+                        onChange={handlerMessage}
                         name="message"
                         type="text"
                         form="contact__form"
@@ -33,17 +55,27 @@ function ContactMe () {
                     />
                 </div>
                 <div>
-                    <div className="form__item">
-                        <label>Your Email:</label>
-                        <input 
+                    <div className={`form__item ${emailState}`}>
+                        <label for="email">Your Email:</label>
+                        <input
                             required
+                            onChange={handlerEmail}
                             laceholder="someone@example.com"
+                            id="email"
                             type="email"
                             name="email"
                             form="contact__form"
+                            autoComplete="off"
                         />
                     </div>
-                    <button className="btn__hover-eff">Submit</button>
+                    <button
+                        className={`btn__hover-eff ${emailState} ${messageState}`}
+                        type="submit"    
+                        name="submit"
+                        value=""
+                        form="contact__form"
+                        disabled={emailState || messageState}
+                    >Submit</button>
                 </div>
             </form>
         </section>

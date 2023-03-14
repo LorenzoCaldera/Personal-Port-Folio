@@ -24,7 +24,7 @@
 
   .disabled {
     cursor: not-allowed;
-    filter: grayscale(50%)
+    filter: grayscale(50%);
   }
 
   .code-btn {
