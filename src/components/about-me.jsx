@@ -1,4 +1,5 @@
 import React from "react"
+import scrollEff from "../assets/scroll-eff"
 
 function AboutMe() {
     const [welcomeClass, setWelcomeClass] = React.useState("show")
@@ -10,21 +11,7 @@ function AboutMe() {
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890#%?<>"
     let interval = null
 
-    React.useEffect(() => {
-        const handlerScroll = (references, callback) => {
-            const elements = [...references]
-            const setClass = [...callback]
-
-            elements.forEach((element, index) => {
-                const { y } = element.current.getBoundingClientRect()
-                const currentClass = (y < -window.innerHeight || y  > window.innerHeight) ? "hidden" : "show"
-                setClass[index](currentClass)
-            })
-        }
-    
-        window.addEventListener('scroll', () => {handlerScroll([welcomeRef, parragraphRef], [setWelcomeClass, setparragraphClass])})
-        return () => {window.removeEventListener('scroll', handlerScroll)}
-    })
+    scrollEff([welcomeRef, parragraphRef], [setWelcomeClass, setparragraphClass])
 
     const textEffect = (e) => {
 
@@ -66,10 +53,12 @@ function AboutMe() {
                     <h2>FULL STACK DEVELOPER.</h2>
                 </div>
             </header>
-            <p ref={parragraphRef} className={parragraphClass}> Hi there! I'm a 17-year-old web developer passionate about programming and web design. My main focus is on creating functional web pages with an attractive design and clean, readable code.</p>
-            <p ref={parragraphRef} className={parragraphClass}> As a full-stack developer, I have skills in both front-end and back-end development. This means that I can create the structure and functionality of the web page, as well as design the user interface and user experience. Additionally, I can configure servers to make the web pages available online for everyone.</p>
-            <p ref={parragraphRef} className={parragraphClass}> I strive to stay up-to-date with the latest trends and technologies in web development to ensure that my web pages are always modern and relevant.</p>
-            <p ref={parragraphRef} className={parragraphClass}> If you need a web developer who focuses on quality and efficiency, don't hesitate to get in touch with me! I'm always willing to work on new projects and excited to see how I can help you achieve your online goals.</p>
+            <div ref={parragraphRef} className={parragraphClass} style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                <p> Hi there! I'm a 17-year-old web developer passionate about programming and web design. My main focus is on creating functional web pages with an attractive design and clean, readable code.</p>
+                <p> As a full-stack developer, I have skills in both front-end and back-end development. This means that I can create the structure and functionality of the web page, as well as design the user interface and user experience. Additionally, I can configure servers to make the web pages available online for everyone.</p>
+                <p> I strive to stay up-to-date with the latest trends and technologies in web development to ensure that my web pages are always modern and relevant.</p>
+                <p> If you need a web developer who focuses on quality and efficiency, don't hesitate to get in touch with me! I'm always willing to work on new projects and excited to see how I can help you achieve your online goals.</p>
+            </div>
         </section>
     )
 }
