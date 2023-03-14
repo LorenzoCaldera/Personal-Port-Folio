@@ -2,6 +2,8 @@ import React from "react"
 import Logo from "../images/logo-example.png"
 import SideBar from "./side-bar"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 function Header() {
     return (
         <nav className="navbar">
@@ -13,6 +15,7 @@ function Header() {
                 <a className="nav__item" href="/#contact">Contact</a>
             </div>
             <SideBar />
+            <FontAwesomeIcon icon={faGlobe} />
         </nav>
     )
 }
