@@ -7,7 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 function ContactMe () {
     const [emailState, setEmail] = React.useState("disabled")
     const [messageState, setMessage] = React.useState("disabled")
-    const [contactClass, setContactClass] = React.useState("disabled")
+    const [contactClass, setContactClass] = React.useState("show")
 
     const contactRef = React.useRef()
 
