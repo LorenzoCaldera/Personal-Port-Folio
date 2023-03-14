@@ -1,9 +1,15 @@
 import React from "react"
+import scrollEff from "../assets/scroll-eff"
+
 import ToDoList from "../images/to-do-list.png"
 
 function Projects () {
+    const [projectsClass, setProjectsClass] = React.useState("show")
+    const projectsRef = React.useRef()
+
+    scrollEff([projectsRef], [setProjectsClass])
     return (
-        <section id="projects">
+        <section id="projects" ref={projectsRef} className={projectsClass}>
             <h1>PROJECTS</h1>
             <div className="d-flex">
                 <div>

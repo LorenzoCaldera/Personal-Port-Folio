@@ -12,13 +12,6 @@ function Footer() {
 
   return (
     <section id="footer">
-        <div className="footer__top">
-            <div className="social">
-                {/* <a href="https://www.instagram.com/"><FaInstagram /></a>
-                <a href="https://github.com/"><FaGithub /></a>
-                <a href="mailto:email@miempresa.com"><FaEnvelope /></a> */}
-            </div>
-        </div>
         <div className="footer__bottom d-flex align-center">
             <p>&copy; 2023 Lorenzo Caldera</p>
             <button onClick={handleScrollTop}><span>GO UP</span></button>
