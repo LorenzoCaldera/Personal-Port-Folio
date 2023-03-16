@@ -115,27 +115,39 @@ button {
 /* SCROLL EFFECT:  */
 
 .hidden {
-  animation: hidden 3s ease 0s 1 normal forwards;
+  transition: all 3s;
+  opacity: 0;
+  filter: blur(6px);
+  transform: translateX(-10%);
 }
 
 section:nth-of-type(2n).show {
-  animation: none;
+  transition: none;
 }
 
 section:nth-of-type(2n).show > * {
-  animation: show 3s ease 0s 1 normal forwards;
+  transition: all 3s;
+  opacity: 1;
+  filter: none;
+  transform: translateX(0%);
 }
 
 .show {
-  animation: show 3s ease 0s 1 normal forwards;
+  transition: all 3s;
+  opacity: 1;
+  filter: none;
+  transform: translateX(0%);
 }
 
 section:nth-of-type(2n).hidden {
-  animation: none;
+  transition: none;
 }
 
 section:nth-of-type(2n).hidden > * {
-  animation: hidden 3s ease 0s 1 normal forwards;
+  transition: all 3s;
+  opacity: 0;
+  filter: blur(6px);
+  transform: translateX(-10%);
 }
 
 @keyframes show {
