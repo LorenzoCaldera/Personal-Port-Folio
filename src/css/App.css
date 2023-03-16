@@ -150,27 +150,6 @@ section:nth-of-type(2n).hidden > * {
   transform: translateX(-10%);
 }
 
-@keyframes show {
-  from {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-10%);
-  }
-  to {
-    opacity: 1;
-    filter: none;
-    transform: translateX(0%);
-  }
-}
-
-@keyframes hidden {
-  100% {
-    opacity: 0;
-    filter: blur(6px);
-    transform: translateX(-10%);
-  }
-}
-
 /* CURVE:  */
 
 .curve {
