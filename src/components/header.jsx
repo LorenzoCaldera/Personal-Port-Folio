@@ -1,10 +1,13 @@
 import React from "react"
 import Logo from "../images/logo-example.png"
 import SideBar from "./side-bar"
+import ChooseLanguage from "./language"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 function Header() {
+    const [languageSpan, setLanguage] = React.useState({"open": false})
+    const language = languageSpan.open ? <ChooseLanguage /> : "" 
     return (
         <nav className="navbar">
             <img alt="page-logo" src={Logo} />
@@ -15,7 +18,12 @@ function Header() {
                 <a className="nav__item" href="/#contact">Contact</a>
             </div>
             <SideBar />
-            <FontAwesomeIcon icon={faGlobe} />
+            <FontAwesomeIcon
+                id="language"
+                icon={faGlobe}
+                onClick={() => {setLanguage({open: true})}}
+            />
+            {language}
         </nav>
     )
 }
