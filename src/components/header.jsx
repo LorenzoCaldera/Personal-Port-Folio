@@ -21,7 +21,7 @@ function Header() {
             <FontAwesomeIcon
                 id="language-icon"
                 icon={faGlobe}
-                onClick={() => {setLanguage({open: true})}}
+                onClick={() => {setLanguage({open: !languageSpan.open})}}
             />
             {language}
         </nav>
