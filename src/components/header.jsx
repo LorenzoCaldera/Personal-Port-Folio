@@ -19,7 +19,7 @@ function Header() {
             </div>
             <SideBar />
             <FontAwesomeIcon
-                id="language"
+                id="language-icon"
                 icon={faGlobe}
                 onClick={() => {setLanguage({open: true})}}
             />
