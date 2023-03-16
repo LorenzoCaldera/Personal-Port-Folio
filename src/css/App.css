@@ -130,6 +130,14 @@ section:nth-of-type(2n).show > * {
   animation: show 3s ease 0s 1 normal forwards;
 }
 
+section:nth-of-type(2n).hidden {
+  animation: none;
+}
+
+section:nth-of-type(2n).hidden > * {
+  animation: hidden 3s ease 0s 1 normal forwards;
+}
+
 @keyframes show {
   from {
     opacity: 0;
