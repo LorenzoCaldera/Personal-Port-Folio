@@ -24,16 +24,20 @@
     padding: .5rem;
 }
 
-#languages ul li {
-    animation: borderHoverEff 2s ease-in 1 normal forwards;
+#languages ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
 }
+
+#languages ul li:hover::after {
+    width: 100%;
+}  
 
 @keyframes openLanguage {
     from { height: 0; }
     to { height: 23rem; }
-}
-
-@keyframes borderHoverEff {
-    from { border-bottom: none; }
-    to { border-bottom: 2px solid black; }
 }
