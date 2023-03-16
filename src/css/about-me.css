@@ -34,7 +34,7 @@
     width: 35rem;
     height: 5px;
     border-radius: 2.5px;
-    background: linear-gradient(110deg, var(--c-red), #000000, var(--c-blue));
+    background: linear-gradient(110deg, var(--c-red), var(--c-black), var(--c-blue));
     background-size: 200% 200%;
     animation: gradient-circles 3s ease infinite;
     -webkit-animation: gradient-circles 3s ease infinite;

@@ -29,8 +29,11 @@
     display: block;
     width: 0;
     height: 2px;
-    background: #000;
-    transition: width .3s;
+    transition: width 1s cubic-bezier(0.75, 0, 0, 1);
+    background: linear-gradient(110deg, var(--c-red), var(--c-black), var(--c-blue));
+    background-size: 200% 200%;
+    animation: gradient-circles 3s ease infinite;
+    -webkit-animation: gradient-circles 3s ease infinite;
 }
 
 #languages ul li:hover::after {
