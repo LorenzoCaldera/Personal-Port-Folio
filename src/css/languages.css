@@ -24,7 +24,16 @@
     padding: .5rem;
 }
 
+#languages ul li {
+    animation: borderHoverEff 2s ease-in 1 normal forwards;
+}
+
 @keyframes openLanguage {
     from { height: 0; }
     to { height: 23rem; }
+}
+
+@keyframes borderHoverEff {
+    from { border-bottom: none; }
+    to { border-bottom: 2px solid black; }
 }
