@@ -22,6 +22,7 @@
 #languages ul li {
     margin: 2rem 0;
     padding: .5rem;
+    border-radius: 10px;
 }
 
 #languages ul li::after {
@@ -38,6 +39,10 @@
 
 #languages ul li:hover::after {
     width: 100%;
+}  
+
+#languages ul li:hover {
+    border: 2px solid var(--c-black);
 }  
 
 @keyframes openLanguage {
