@@ -15,23 +15,25 @@
 #languages ul {
     text-align: center;
     list-style-type: none;
-    margin: 2rem 2rem;
+    width: 10rem;
+    margin: 2rem 0;
     padding: 0;
 }
 
 #languages ul li {
-    margin: 2rem 0;
-    padding: .5rem;
-    border-radius: 10px;
-    transition: background-color .3s;
+    margin: 1rem 0;
+    width: 100%;
+    padding: 1rem 0;
+    transition: background-color 1s;
 }
 
 #languages ul li::after {
     content: '';
     display: block;
+    margin: 0 2rem;
     width: 0;
     height: 2px;
-    transition: width 1s cubic-bezier(0.75, 0, 0, 1);
+    transition: width 2s cubic-bezier(0.75, 0, 0, 1);
     background: linear-gradient(110deg, var(--c-red), var(--c-black), var(--c-blue));
     background-size: 200% 200%;
     animation: gradient-circles 3s ease infinite;
@@ -39,7 +41,7 @@
 }
 
 #languages ul li:hover::after {
-    width: 100%;
+    width: calc(100% - 4rem);
 }  
 
 #languages ul li:hover {
