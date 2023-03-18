@@ -3,10 +3,6 @@
     z-index: 5;
   }
   
-  #side-bar .options {
-    transition: width .5s;
-  }
-  
   #side-bar.close .options,
   #side-bar.close .options *,
   #side-bar.close .options *::after {
@@ -37,6 +33,7 @@
   }
 
   #side-bar .options {
+    transition: width .5s;
     z-index: 3;
     position: absolute;
     width: 85vw;
@@ -48,10 +45,6 @@
     margin-top: 100px;
     padding: 0 0 2rem 2rem;
     box-sizing: border-box;
-  }
-
-  #side-bar .options > div:last-child {
-    margin-top: 150px;
   }
 
   .span__item {

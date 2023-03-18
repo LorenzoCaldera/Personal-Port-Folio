@@ -9,8 +9,8 @@
     background-color: var(--background);
     border: 2px solid var(--c-black);
     overflow: hidden;
-    animation: openLanguage 1s ease 0s 1 normal forwards;
     border-radius: 5px;
+    animation: openLanguage 1s ease 0s 1 normal forwards;
 }
 
 #languages ul {
@@ -52,4 +52,10 @@
 @keyframes openLanguage {
     from { height: 0; }
     to { height: 24rem; }
+}
+
+@media (max-width: 600px) {
+    .navbar > #language, .navbar > #language-icon {
+        display: none;
+    }
 }
