@@ -49,7 +49,7 @@ function AboutMe() {
                         onMouseOver={textEffect}
                         data-value="LORENZO CALDERA, WEB DEVELOPER"
                         >LORENZO CALDERA, WEB DEVELOPER</h1>
-                    <div className="horizontal__line"></div>
+                    <div className="horizontal__line" />
                     <h2>FULL STACK DEVELOPER.</h2>
                 </div>
             </header>

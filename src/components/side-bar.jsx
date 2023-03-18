@@ -7,7 +7,6 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 function SideBar () {
     const [sideBarState, setSideBarState] = React.useState(false)
     const [languageSpan, setLanguage] = React.useState({"open": false})
-    const language = languageSpan.open ? <ChooseLanguage /> : "" 
 
     const handlerToggleSideBar = () => {
         setSideBarState(!sideBarState)
@@ -60,7 +59,7 @@ function SideBar () {
                         onClick={() => {setLanguage({open: !languageSpan.open})}}
                     />
                 </div>
-                {language}
+                {languageSpan.open ? <ChooseLanguage /> : "" }
             </span>
         </div>
     )

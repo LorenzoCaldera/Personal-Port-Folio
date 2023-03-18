@@ -20,9 +20,9 @@ function Projects () {
                         <a target="_blank" href="https://github.com/LorenzoCaldera/Task-List">
                             <button className="code-btn btn__color-eff">
                                 <span className="colors-layer">
-                                    <span className="first-layer"></span>
-                                    <span className="second-layer"></span>
-                                    <span className="third-layer"></span>
+                                    <span className="first-layer" />
+                                    <span className="second-layer" />
+                                    <span className="third-layer" />
                                 </span>
                                 <span className="text-move">
                                     <div className="main-text">Source code</div>

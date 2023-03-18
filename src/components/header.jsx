@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 function Header() {
     const [languageSpan, setLanguage] = React.useState({"open": false})
-    const language = languageSpan.open ? <ChooseLanguage /> : "" 
     return (
         <nav className="navbar">
             <img alt="page-logo" src={Logo} />
@@ -23,7 +22,7 @@ function Header() {
                 icon={faGlobe}
                 onClick={() => {setLanguage({open: !languageSpan.open})}}
             />
-            {language}
+            {languageSpan.open ? <ChooseLanguage /> : "" }
         </nav>
     )
 }
