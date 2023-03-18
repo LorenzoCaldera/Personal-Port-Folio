@@ -1,7 +1,13 @@
 import React from "react"
+import ChooseLanguage from "./language"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGlobe } from "@fortawesome/free-solid-svg-icons"
 
 function SideBar () {
     const [sideBarState, setSideBarState] = React.useState(false)
+    const [languageSpan, setLanguage] = React.useState({"open": false})
+    const language = languageSpan.open ? <ChooseLanguage /> : "" 
 
     const handlerToggleSideBar = () => {
         setSideBarState(!sideBarState)
@@ -46,7 +52,15 @@ function SideBar () {
                         >Contact</a>
                     </div>
                 </div>
-                <div><p>&copy; 2023 Lorenzo Caldera</p></div>
+                <div className="footer__bottom">
+                    <p>&copy; 2023 Lorenzo Caldera</p>
+                    <FontAwesomeIcon
+                        id="language-icon"
+                        icon={faGlobe}
+                        onClick={() => {setLanguage({open: !languageSpan.open})}}
+                    />
+                </div>
+                {language}
             </span>
         </div>
     )

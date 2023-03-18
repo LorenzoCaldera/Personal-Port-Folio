@@ -76,6 +76,12 @@
     text-decoration: none;
     letter-spacing: 0.5rem;
   }
+
+  .footer__bottom {
+    display: flex;
+    align-items: center;
+    margin: 30px 20px 20px 0px;
+  }
   
   @media (max-width: 600px) {
     #side-bar {
