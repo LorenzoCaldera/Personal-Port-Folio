@@ -10,6 +10,7 @@
     border: 2px solid var(--c-black);
     overflow: hidden;
     animation: openLanguage 1s ease 0s 1 normal forwards;
+    border-radius: 5px;
 }
 
 #languages ul {
@@ -46,7 +47,7 @@
 
 #languages ul li:hover {
     background-color: var(--c-yellow);
-}  
+}
 
 @keyframes openLanguage {
     from { height: 0; }
