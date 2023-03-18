@@ -43,9 +43,9 @@ function ContactMe () {
                 <a target="_blank" href="https://www.freecodecamp.org/loloix_">
                     <FontAwesomeIcon icon={faFreeCodeCamp} /><p>freeCodeCamp</p>
                 </a>
-                <a target="_blank" href="">
+                {/* <a target="_blank" href="">
                     <FontAwesomeIcon icon={faEnvelope} /><p>Email</p>
-                </a>
+                </a> */}
             </address>
             <form id="contact__form" method="get" onSubmit={(event) => {event.preventDefault()}}>
                 <div className={`form__item form__message ${messageState}`}>
