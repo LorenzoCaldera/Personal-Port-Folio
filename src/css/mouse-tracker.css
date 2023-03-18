@@ -23,14 +23,14 @@
     background-color: var(--c-black);
   }
 
-  body:has(button:hover, a:hover) .mouse-tracker.cursor {
+  body:has(button:hover, a:hover, #language-icon:hover) .mouse-tracker.cursor {
     height: 30px;
     backdrop-filter: invert(1);
     background-color: transparent;
     box-shadow: 0px 0px 5px 5px var(--c-black);
   }
 
-  body:has(button:hover, a:hover) .mouse-tracker.circle {
+  body:has(button:hover, a:hover, #language-icon:hover) .mouse-tracker.circle {
     height: 0px;
     width: 0px;
     transition: all .8s;
