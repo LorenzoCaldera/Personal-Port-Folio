@@ -24,8 +24,9 @@
 #languages ul li {
     margin: 1rem auto;
     width: 75%;
+    border-radius: 10px;
     padding: 1rem 0;
-    transition: background-color 1s;
+    transition: background-color 1s, color .3s;
 }
 
 #languages ul li::after {
@@ -46,7 +47,8 @@
 }
 
 #languages ul li:hover {
-    background-color: var(--c-yellow);
+    background-color: var(--c-black);
+    color: var(--background);
 }
 
 @keyframes openLanguage {
