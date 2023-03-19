@@ -16,7 +16,7 @@ function Projects () {
                     <h2>TO-DO LIST: </h2>
                     <p>This application is developed in React and has several useful features, including a messaging chat, a to-do list, and a calendar.</p>
                     <div className="projects__buttons">
-                        <button className="disabled visit-btn btn__hover-eff">See live</button>
+                        <button disabled className="visit-btn btn__hover-eff">See live</button>
                         <a target="_blank" href="https://github.com/LorenzoCaldera/Task-List">
                             <button className="code-btn btn__color-eff">
                                 <span className="colors-layer">

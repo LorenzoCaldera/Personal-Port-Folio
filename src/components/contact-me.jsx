@@ -72,7 +72,7 @@ function ContactMe () {
                         />
                     </div>
                     <button
-                        className={`btn__hover-eff ${emailState} ${messageState}`}
+                        className="btn__hover-eff"
                         type="submit"
                         name="submit"
                         value=""
