@@ -26,9 +26,7 @@ function AboutMe() {
                 .split("")
                 .map((letter, index) => {
                     if (letter === " ") return " "
-                    if(index < iteration) {
-                        return e.target.dataset.value[index]
-                    }
+                    if(index < iteration) return e.target.dataset.value[index]
                     return letters[Math.floor(Math.random() * 36)]
                 })
                 .join("")
