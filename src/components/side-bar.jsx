@@ -27,25 +27,25 @@ function SideBar () {
             <span className="options">
                 <div>
                     <div className="span__item">
-                        <a 
+                        <a
                             href="/#about"
                             onClick={handlerToggleSideBar}
                         >About me</a>
                     </div>
                     <div className="span__item">
-                        <a 
+                        <a
                             href="/#technology"
                             onClick={handlerToggleSideBar}
                         >Technology stack</a>
                     </div>
                     <div className="span__item">
-                        <a 
+                        <a
                             href="/#projects"
                             onClick={handlerToggleSideBar}
                         >Projects</a>
                     </div>
                     <div className="span__item">
-                        <a 
+                        <a
                             href="/#contact"
                             onClick={handlerToggleSideBar}
                         >Contact</a>

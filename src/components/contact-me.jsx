@@ -43,9 +43,6 @@ function ContactMe () {
                 <a target="_blank" href="https://www.freecodecamp.org/loloix_">
                     <FontAwesomeIcon icon={faFreeCodeCamp} /><p>freeCodeCamp</p>
                 </a>
-                {/* <a target="_blank" href="">
-                    <FontAwesomeIcon icon={faEnvelope} /><p>Email</p>
-                </a> */}
             </address>
             <form id="contact__form" method="get" onSubmit={(event) => {event.preventDefault()}}>
                 <div className={`form__item form__message ${messageState}`}>
@@ -76,7 +73,7 @@ function ContactMe () {
                     </div>
                     <button
                         className={`btn__hover-eff ${emailState} ${messageState}`}
-                        type="submit"    
+                        type="submit"
                         name="submit"
                         value=""
                         form="contact__form"

@@ -18,7 +18,7 @@ function AboutMe() {
         // TEXT EFFECT - CREDITS TO HYPERPLEXED
 
         let iteration = 0
-                
+
         clearInterval(interval)
 
         interval = setInterval(() => {
@@ -30,9 +30,9 @@ function AboutMe() {
                     return letters[Math.floor(Math.random() * 36)]
                 })
                 .join("")
-            
+
             if(iteration >= e.target.dataset.value.length) clearInterval(interval)
-            
+
             iteration += 1 / 3
         }, 30)
     }
