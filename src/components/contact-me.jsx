@@ -15,19 +15,11 @@ function ContactMe () {
 
     const handlerEmail = e => {
         const emailRegex = new RegExp('\\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,4}\\b', "gi");
-        if (emailRegex.test(e.target.value)) {
-            setEmail("")
-        } else {
-            setEmail("disabled")
-        }
+        emailRegex.test(e.target.value) ? setEmail("") : setEmail("disabled")
     }
 
     const handlerMessage = e => {
-        if (e.target.value !== "") {
-            setMessage("")
-        } else {
-            setMessage("disabled")
-        }
+        e.target.value !== "" ? setMessage("") : setMessage("disabled")
     }
 
     return (
