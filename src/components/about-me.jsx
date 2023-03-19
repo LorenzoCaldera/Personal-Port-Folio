@@ -31,9 +31,7 @@ function AboutMe() {
                 })
                 .join("")
             
-            if(iteration >= e.target.dataset.value.length){ 
-                clearInterval(interval)
-            }
+            if(iteration >= e.target.dataset.value.length) clearInterval(interval)
             
             iteration += 1 / 3
         }, 30)
