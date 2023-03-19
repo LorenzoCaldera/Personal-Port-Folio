@@ -2,7 +2,6 @@ import React from "react";
 import scrollEff from "../assets/scroll-eff";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFreeCodeCamp, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ContactMe () {
     const [emailState, setEmail] = React.useState("disabled")

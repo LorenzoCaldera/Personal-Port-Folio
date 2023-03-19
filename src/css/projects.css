@@ -22,11 +22,6 @@
     max-height: 3rem;
   }
 
-  .disabled {
-    cursor: not-allowed;
-    filter: grayscale(50%);
-  }
-
   .code-btn {
     border-radius: 20px;
     background-color: var(--c-black);
