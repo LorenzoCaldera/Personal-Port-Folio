@@ -7,7 +7,7 @@
     top: 0;
     left: 0;
   }
-  
+
   .circles * {
     width: 800px;
     height: 800px;
@@ -18,18 +18,18 @@
     border-radius: 40%;
     z-index: -1;
   }
-  
+
   .blue__circles * {
     background-color: var(--c-blue);
     right: -400px;
     left: auto;
     top: 400px;
   }
-  
+
   .red__circles * {
     background-color: var(--c-red);
   }
-  
+
   .circles  *:nth-of-type(n) {
     animation: circles 15s linear -1s infinite;
     -webkit-animation: circles 15s linear -1s infinite;
@@ -42,7 +42,7 @@
     animation: circles 21s linear -1s infinite;
     -webkit-animation: circles 21s linear -1s infinite;
   }
-  
+
   @keyframes circles {
     0%{
       transform: rotate(0deg);
@@ -54,7 +54,7 @@
       transform: rotate(360deg) scale(1);
     }
   }
-  
+
   @-webkit-keyframes circles {
     0%{
       transform: rotate(0deg);
@@ -66,16 +66,16 @@
       transform: rotate(360deg) scale(1);
     }
   }
-  
+
   @media (max-width: 600px) {
-  
+
     .circles * {
       width: 500px;
       height: 500px;
       top: 250px;
       left: -250px;
     }
-    
+
     .blue__circles *  {
       left: auto;
       right: -350px;

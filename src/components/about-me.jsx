@@ -26,7 +26,7 @@ function AboutMe() {
                 .split("")
                 .map((letter, index) => {
                     if (letter === " ") return " "
-                    if(index < iteration) return e.target.dataset.value[index]
+                    if (index < iteration) return e.target.dataset.value[index]
                     return letters[Math.floor(Math.random() * 36)]
                 })
                 .join("")
@@ -44,7 +44,7 @@ function AboutMe() {
                     <h1
                         onMouseOver={textEffect}
                         data-value="LORENZO CALDERA, WEB DEVELOPER"
-                        >LORENZO CALDERA, WEB DEVELOPER</h1>
+                    >LORENZO CALDERA, WEB DEVELOPER</h1>
                     <div className="horizontal__line" />
                     <h2>FULL STACK DEVELOPER.</h2>
                 </div>

@@ -55,7 +55,7 @@
   .form__message textarea {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     color: var(--background);
-    
+
     min-height: 30%;
     max-height: 300%;
     max-width: 100%;
@@ -76,7 +76,7 @@
     .social__media {
       display: flex;
     }
-    
+
     .social__media > * {
       padding: 1rem 0;
       width: 4rem;
@@ -90,7 +90,7 @@
       max-width: 100%;
       flex-direction: column;
     }
-    
+
     #contact__form > *:last-child {
       margin-left: 0;
       min-width: 10%;
@@ -150,7 +150,7 @@
     padding: 0.5rem 0rem 0.5rem 1rem;
     border-radius: 15px;
     font-size: 16px;
-  } 
+  }
 
   .form__item:not(.form__message).disabled:hover::before {
     top: -5rem;

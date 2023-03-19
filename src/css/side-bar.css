@@ -2,7 +2,7 @@
     display: none;
     z-index: 5;
   }
-  
+
   #side-bar.close .options,
   #side-bar.close .options *,
   #side-bar.close .options *::after {
@@ -22,11 +22,11 @@
     stroke-linecap: round;
     transition: stroke-dashoffset ease-in-out .5s, stroke-dasharray .5s;
   }
-  
+
   #side-bar.open .menu path {
     stroke-dashoffset: -132px;
   }
-  
+
   #side-bar.open .menu path:last-child {
     stroke-dashoffset: -71px;
     stroke-dasharray: 40 172;
@@ -82,7 +82,7 @@
     align-items: center;
     margin: 30px 20px 20px 0px;
   }
-  
+
   @media (max-width: 600px) {
     #side-bar {
       display: block;

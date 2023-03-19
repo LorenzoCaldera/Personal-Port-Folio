@@ -5,7 +5,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  
+
   #about p {
     max-width: 60%;
   }
@@ -29,7 +29,7 @@
     position: relative;
     flex-direction: column;
   }
-  
+
   .horizontal__line {
     width: 35rem;
     height: 5px;
@@ -39,7 +39,7 @@
     animation: gradient-circles 3s ease infinite;
     -webkit-animation: gradient-circles 3s ease infinite;
   }
-  
+
   @keyframes gradient-circles {
     0% {
       background-position:10% 0%
@@ -51,7 +51,7 @@
       background-position:10% 0%
     }
   }
-  
+
   @-webkit-keyframes gradient-circles {
     0% {
       background-position:10% 0%
@@ -63,12 +63,12 @@
       background-position:10% 0%
     }
   }
-  
+
   @media (max-width: 600px) {
     #about p {
       max-width: 100%;
     }
-  
+
     .horizontal__line {
       width: 15rem;
     }

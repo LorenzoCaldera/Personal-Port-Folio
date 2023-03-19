@@ -22,7 +22,7 @@ document.body.onpointermove = e => {
         top: `${clientY + scroll}px`,
         left: `${clientX}px`
     }, {duration: 3000, fill: "forwards"})
-    
+
     mouseTracker[1].animate({
         top: `${clientY + scroll}px`,
         left: `${clientX}px`
