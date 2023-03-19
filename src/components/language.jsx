@@ -1,19 +1,40 @@
 import React from "react"
 
+const languages = [
+    {
+        "name": "English",
+        "code": "en"
+    },
+    {
+        "name": "Español",
+        "code": "es"
+    },
+    {
+        "name": "Italiano",
+        "code": "it"
+    },
+    {
+        "name": "Français",
+        "code": "fr"
+    },
+    {
+        "name": "Português",
+        "code": "pt"
+    }
+]
+
 function ChooseLanguage() {
-    const changeLanguage = (e) => {
+    const changeLanguage = (language) => {
+        document.querySelector("html").lang = language
         console.log("you choose: " + document.querySelector("html").lang)
-        document.querySelector("html").lang = e.target.dataset.lang
     }
 
     return (
         <span id="languages">
             <ul>
-                <li data-lang="en" onClick={changeLanguage}>English</li>
-                <li data-lang="es" onClick={changeLanguage}>Español</li>
-                <li data-lang="it" onClick={changeLanguage}>Italiano</li>
-                <li data-lang="pt" onClick={changeLanguage}>Português</li>
-                <li data-lang="fr" onClick={changeLanguage}>Frances</li>
+                {languages.map(({ name, code }) => (
+                    <li key={name} onClick={() => changeLanguage(code)}>{name}</li>
+                ))}
             </ul>
         </span>
     )
