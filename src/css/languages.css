@@ -7,8 +7,8 @@
     overflow: hidden;
     right: 2rem;
     top: 3.5rem;
-    background-color: var(--background);
-    border: 2px solid var(--c-black);
+    background-color: var(--c-black);
+    border: 2px solid var(--background);
     border-radius: 5px;
     animation: openLanguage 1s ease 0s 1 normal forwards;
 }
@@ -24,6 +24,7 @@
 #languages ul li {
     margin: 1rem auto;
     width: 75%;
+    color: var(--background);
     border-radius: 10px;
     padding: 1rem 0;
     transition: background-color 1s, color .3s;
@@ -47,8 +48,8 @@
 }
 
 #languages ul li:hover {
-    background-color: var(--c-black);
-    color: var(--background);
+    background-color: var(--c-yellow);
+    color: var(--c-black);
 }
 
 @keyframes openLanguage {
