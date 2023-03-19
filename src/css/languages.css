@@ -9,7 +9,7 @@
     top: 3.5rem;
     background-color: var(--c-black);
     border: 2px solid var(--background);
-    border-radius: 5px;
+    border-radius: 15px;
     animation: openLanguage 1s ease 0s 1 normal forwards;
 }
 
