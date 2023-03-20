@@ -39,7 +39,7 @@ function ChooseLanguage() {
             <ul>
                 {languages.map(({ name, code, country_code }) => (
                     <li key={name} onClick={() => changeLanguage(code)}>
-                        <span className={`flag-icon flag-icon-${country_code}`}></span>
+                        <span className={`flag-icon flag-icon-${country_code}`} />
                         {name}
                     </li>
                 ))}
