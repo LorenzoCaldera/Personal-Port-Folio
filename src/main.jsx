@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
+// import App from './App'
 
 import { createRoot } from 'react-dom/client';
 import i18n from "i18next";
@@ -18,10 +18,6 @@ i18n
     },
     lng: "en",
     fallbackLng: "en",
-
-    interpolation: {
-      escapeValue: false
-    }
   });
 
 function App() {
