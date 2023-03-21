@@ -1,29 +1,24 @@
 import React from "react"
 
 const languages = [
-    {   
+    {
         "name": "English",
-        "country_code": "us",
         "code": "en"
     },
     {
         "name": "Español",
-        "country_code": "es",
         "code": "es"
     },
     {
         "name": "Italiano",
-        "country_code": "it",
         "code": "it"
     },
     {
         "name": "Français",
-        "country_code": "fr",
         "code": "fr"
     },
     {
         "name": "Português",
-        "country_code": "br",
         "code": "pt"
     }
 ]
