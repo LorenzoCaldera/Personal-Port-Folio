@@ -17,10 +17,10 @@ i18n
         }
       }
     },
-    lng: document.querySelector('html').lang,
     fallbackLng: "en",
     detection: {
         order: ['htmlTag', 'cookie', 'localStorage', 'path', 'subdomain'],
+        caches: ['cookie']
     }
   });
 
