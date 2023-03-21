@@ -18,14 +18,15 @@ i18n
         caches: ['cookie']
     },
     backend: {
-        loathPat: 'assets/locales/{{lng}}/translation.json'
-    }
+        loadPath: '/assets/locales/{{lng}}/translation.json'
+    },
+    react: { useSuspense: false }
   });
 
 function App() {
   const { t } = useTranslation();
 
-  return <h2>{t('Welcome to React')}</h2>;
+  return <h2>{t('welcome_to_react')}</h2>;
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
