@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App'
+import App from './App'
 
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
 
@@ -23,12 +23,6 @@ i18n
     },
     react: { useSuspense: false }
   });
-
-function App() {
-  const { t } = useTranslation();
-
-  return <h2>{t('welcome_to_react')}</h2>;
-}
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

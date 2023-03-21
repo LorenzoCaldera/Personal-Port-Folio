@@ -25,6 +25,7 @@
     box-shadow: 0 0 50px var(--c-black);
     align-items: center;
     text-align: center;
+    text-transform: uppercase;
     display: flex;
     position: relative;
     flex-direction: column;
