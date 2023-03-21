@@ -4,9 +4,11 @@ import ReactDOM from 'react-dom/client'
 
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
+  .use(LanguageDetector)
   .init({
     resources: {
       en: {
@@ -17,6 +19,9 @@ i18n
     },
     lng: document.querySelector('html').lang,
     fallbackLng: "en",
+    detection: {
+        order: ['htmlTag', 'cookie', 'localStorage', 'path', 'subdomain'],
+    }
   });
 
 function App() {
