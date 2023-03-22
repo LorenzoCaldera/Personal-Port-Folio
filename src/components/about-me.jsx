@@ -44,7 +44,7 @@ function AboutMe() {
         <section id="about">
             <header ref={welcomeRef} className={`welcome ${welcomeClass}`}>
                 <div>
-                    <h1>WELCOME! I'M</h1>
+                    <h1>{t('welcome')}</h1>
                     <h1
                         onMouseOver={textEffect}
                         data-value="LORENZO CALDERA, WEB DEVELOPER"
