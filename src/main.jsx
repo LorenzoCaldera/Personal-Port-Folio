@@ -15,13 +15,12 @@ i18n
     supportedLngs: ['en', 'es', 'fr', 'it', 'pt'],
     fallbackLng: "en",
     detection: {
-        order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
+        order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
         caches: ['cookie']
     },
     backend: {
         loadPath: '/assets/locales/{{lng}}/translation.json'
-    },
-    react: { useSuspense: false }
+    }
   });
 
 ReactDOM.createRoot(document.getElementById('root')).render(
