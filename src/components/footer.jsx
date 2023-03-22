@@ -1,6 +1,4 @@
 import React from 'react'
-import Logo from "../images/logo-example.png"
-// import { FaInstagram, FaGithub, FaEnvelope } from 'react-icons/fa'
 
 function Footer() {
   const handleScrollTop = () => {

@@ -60,7 +60,7 @@
     min-height: 30%;
     max-height: 300%;
     max-width: 100%;
-    min-width: 65%;
+    min-width: 70%;
   }
 
   @media (max-width: 600px) {
