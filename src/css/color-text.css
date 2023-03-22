@@ -2,7 +2,7 @@
     animation: color-text 30s infinite alternate forwards;
     -webkit-animation: color-text 30s infinite alternate forwards;
   }
-  
+
   @keyframes color-text {
     0% {
       color: #d65c97;
@@ -68,7 +68,7 @@
       color: #64d65c;
     }
   }
-  
+
   @-webkit-keyframes color-text {
     0% {
       color: #d65c97;
@@ -134,7 +134,7 @@
       color: #64d65c;
     }
   }
-  
+
   .color__text span:nth-of-type(1) {
     animation-delay: -19.8s;
     -webkit-animation-delay: -19.8s;

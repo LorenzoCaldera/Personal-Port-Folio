@@ -5,7 +5,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  
+
   #about p {
     max-width: 60%;
   }
@@ -20,16 +20,17 @@
   .welcome > div {
     backdrop-filter: blur(2px);
     border: 3px solid #000000d9;
-    padding: 5rem 12rem;
+    padding: 4rem 12rem;
     border-radius: 20px;
     box-shadow: 0 0 50px var(--c-black);
     align-items: center;
     text-align: center;
+    text-transform: uppercase;
     display: flex;
     position: relative;
     flex-direction: column;
   }
-  
+
   .horizontal__line {
     width: 35rem;
     height: 5px;
@@ -39,7 +40,7 @@
     animation: gradient-circles 3s ease infinite;
     -webkit-animation: gradient-circles 3s ease infinite;
   }
-  
+
   @keyframes gradient-circles {
     0% {
       background-position:10% 0%
@@ -51,7 +52,7 @@
       background-position:10% 0%
     }
   }
-  
+
   @-webkit-keyframes gradient-circles {
     0% {
       background-position:10% 0%
@@ -63,12 +64,12 @@
       background-position:10% 0%
     }
   }
-  
+
   @media (max-width: 600px) {
     #about p {
       max-width: 100%;
     }
-  
+
     .horizontal__line {
       width: 15rem;
     }

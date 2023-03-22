@@ -1,0 +1,9 @@
+{
+    "welcome": "Bienvenue! Je suis",
+    "first_paragraph": " Bonjour! Je suis un développeur web de 17 ans passionné par la programmation et la conception web. Mon principal objectif est de créer des pages web fonctionnelles avec un design attrayant et un code propre et lisible.",
+    "second_paragraph": " En tant que développeur full-stack, j'ai des compétences en développement front-end et back-end. Cela signifie que je peux créer la structure et la fonctionnalité de la page web, ainsi que concevoir l'interface utilisateur et l'expérience utilisateur. De plus, je peux configurer des serveurs pour rendre les pages web disponibles en ligne pour tout le monde.",
+    "third_paragraph": " Je m'efforce de rester à jour avec les dernières tendances et technologies en développement web pour m'assurer que mes pages web sont toujours modernes et pertinentes.",
+    "fourth_paragraph": " Si vous avez besoin d'un développeur web qui se concentre sur la qualité et l'efficacité, n'hésitez pas à me contacter! Je suis toujours prêt à travailler sur de nouveaux projets et excité de voir comment je peux vous aider à atteindre vos objectifs en ligne.",
+    "technology_stack": " J'utilise les technologies les plus demandées par le marché dans le développement web. Full stack : administration de serveurs, front-end et back-end.",
+    "todo_list": " Cette application est développée en React et dispose de plusieurs fonctionnalités utiles, notamment une messagerie chat, une liste de tâches et un calendrier."
+}

@@ -1,11 +1,14 @@
 import React from "react"
-import scrollEff from "../assets/scroll-eff"
+import { useTranslation } from "react-i18next"
 
+import scrollEff from "../assets/scroll-eff"
 import ToDoList from "../images/to-do-list.png"
 
 function Projects () {
     const [projectsClass, setProjectsClass] = React.useState("show")
     const projectsRef = React.useRef()
+
+    const { t } = useTranslation()
 
     scrollEff([projectsRef], [setProjectsClass])
     return (
@@ -14,15 +17,15 @@ function Projects () {
             <div className="d-flex">
                 <div>
                     <h2>TO-DO LIST: </h2>
-                    <p>This application is developed in React and has several useful features, including a messaging chat, a to-do list, and a calendar.</p>
+                    <p>{t('todo_list')}</p>
                     <div className="projects__buttons">
-                        <button className="disabled visit-btn btn__hover-eff">See live</button>
+                        <button disabled className="visit-btn btn__hover-eff">See live</button>
                         <a target="_blank" href="https://github.com/LorenzoCaldera/Task-List">
                             <button className="code-btn btn__color-eff">
                                 <span className="colors-layer">
-                                    <span className="first-layer"></span>
-                                    <span className="second-layer"></span>
-                                    <span className="third-layer"></span>
+                                    <span className="first-layer" />
+                                    <span className="second-layer" />
+                                    <span className="third-layer" />
                                 </span>
                                 <span className="text-move">
                                     <div className="main-text">Source code</div>

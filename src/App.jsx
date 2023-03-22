@@ -24,18 +24,10 @@ import './css/languages.css'
 function App() {
   return (
     <React.Fragment>
-      <span className="mouse-tracker circle"></span>
-      <span className="mouse-tracker cursor"></span>
-      <div className="blue__circles circles">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div className="red__circles circles">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <span className="mouse-tracker circle" />
+      <span className="mouse-tracker cursor" />
+      <div className="blue__circles circles"><div /><div /><div /></div>
+      <div className="red__circles circles"><div /><div /><div /></div>
       <Header />
       <AboutMe />
       <TechnologyStack />
@@ -46,4 +38,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

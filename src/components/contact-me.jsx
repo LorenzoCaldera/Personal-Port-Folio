@@ -2,7 +2,6 @@ import React from "react";
 import scrollEff from "../assets/scroll-eff";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFreeCodeCamp, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function ContactMe () {
     const [emailState, setEmail] = React.useState("disabled")
@@ -15,19 +14,11 @@ function ContactMe () {
 
     const handlerEmail = e => {
         const emailRegex = new RegExp('\\b[\\w\\.-]+@[\\w\\.-]+\\.\\w{2,4}\\b', "gi");
-        if (emailRegex.test(e.target.value)) {
-            setEmail("")
-        } else {
-            setEmail("disabled")
-        }
+        emailRegex.test(e.target.value) ? setEmail("") : setEmail("disabled")
     }
 
     const handlerMessage = e => {
-        if (e.target.value !== "") {
-            setMessage("")
-        } else {
-            setMessage("disabled")
-        }
+        e.target.value !== "" ? setMessage("") : setMessage("disabled")
     }
 
     return (
@@ -43,9 +34,6 @@ function ContactMe () {
                 <a target="_blank" href="https://www.freecodecamp.org/loloix_">
                     <FontAwesomeIcon icon={faFreeCodeCamp} /><p>freeCodeCamp</p>
                 </a>
-                {/* <a target="_blank" href="">
-                    <FontAwesomeIcon icon={faEnvelope} /><p>Email</p>
-                </a> */}
             </address>
             <form id="contact__form" method="get" onSubmit={(event) => {event.preventDefault()}}>
                 <div className={`form__item form__message ${messageState}`}>
@@ -75,8 +63,8 @@ function ContactMe () {
                         />
                     </div>
                     <button
-                        className={`btn__hover-eff ${emailState} ${messageState}`}
-                        type="submit"    
+                        className="btn__hover-eff"
+                        type="submit"
                         name="submit"
                         value=""
                         form="contact__form"

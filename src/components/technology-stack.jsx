@@ -1,5 +1,6 @@
 import React from "react"
 import { nanoid } from "nanoid"
+import { useTranslation } from "react-i18next"
 import scrollEff from "../assets/scroll-eff"
 
 import JSLogo from "../images/javascript-logo.png"
@@ -13,6 +14,8 @@ import AWSLogo from "../images/AWS-logo.png"
 function TechnologyStack () {
     const [technologyClass, setTechnologyClass] = React.useState("show")
     const technologyRef = React.useRef()
+
+    const { t } = useTranslation()
 
     scrollEff([technologyRef], [setTechnologyClass])
 
@@ -37,7 +40,7 @@ function TechnologyStack () {
             <div></div>
         </div>
         <h1 className="color__text">{colorText("TECHNOLOGY STACK")}</h1>
-        <p>I use the technologies most demanded by the market in web development. Full stack: server administration, front-end and back-end.</p>
+        <p>{t('technology_stack')}</p>
         <div className="tech__img">
             <img alt="HTML logo" src={HTMLLogo} />
             <img alt="CSS logo" src={CSSLogo} />

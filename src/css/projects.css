@@ -4,27 +4,22 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   #projects img {
     height: 35vw;
   }
-  
+
   .projects__buttons {
     margin-top: 3rem;
     display: flex;
     gap: 5rem;
   }
-  
+
   .visit-btn {
     border: 2px solid var(--c-black);
     border-radius: 20px;
     padding: 0 1rem;
     max-height: 3rem;
-  }
-
-  .disabled {
-    cursor: not-allowed;
-    filter: grayscale(50%);
   }
 
   .code-btn {
@@ -35,7 +30,7 @@
     max-height: 3rem;
     width: 10rem;
   }
-  
+
   @media (max-width: 600px) {
     #projects img {
       display: none;

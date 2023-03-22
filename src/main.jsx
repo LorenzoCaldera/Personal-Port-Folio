@@ -2,6 +2,27 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from 'i18next-browser-languagedetector';
+import HttpApi from 'i18next-http-backend';
+
+i18n
+  .use(initReactI18next)
+  .use(LanguageDetector)
+  .use(HttpApi)
+  .init({
+    supportedLngs: ['en', 'es', 'fr', 'it', 'pt'],
+    fallbackLng: "en",
+    detection: {
+        order: ['path', 'cookie', 'htmlTag', 'localStorage', 'subdomain'],
+        caches: ['cookie']
+    },
+    backend: {
+        loadPath: '/assets/locales/{{lng}}/translation.json'
+    }
+  });
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
@@ -22,7 +43,7 @@ document.body.onpointermove = e => {
         top: `${clientY + scroll}px`,
         left: `${clientX}px`
     }, {duration: 3000, fill: "forwards"})
-    
+
     mouseTracker[1].animate({
         top: `${clientY + scroll}px`,
         left: `${clientX}px`

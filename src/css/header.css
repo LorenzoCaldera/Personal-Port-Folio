@@ -9,19 +9,19 @@
     background-color: var(--background);
     z-index: 3;
   }
-  
+
   .navbar img {
     width: 3rem;
     animation: float 5s ease 0s infinite;
     -webkit-animation: float 5s ease 0s infinite;
   }
-  
+
   .nav__item {
     padding: 0.75rem;
     color: #000000;
     text-decoration: none;
   }
-  
+
   @keyframes float {
     0% {
       transform: translateY(-5px);
@@ -33,7 +33,7 @@
       transform: translateY(-5px);
     }
   }
-  
+
   @-webkit-keyframes float {
     0% {
       transform: translateY(-5px);
@@ -45,7 +45,7 @@
       transform: translateY(-5px);
     }
   }
-  
+
   @media (max-width: 600px) {
     .navbar {
       padding: 1rem 1rem 0;
