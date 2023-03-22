@@ -14,7 +14,7 @@ function Header() {
                 <a className="nav__item" href="/#about">About me</a>
                 <a className="nav__item" href="/#technology">Technology stack</a>
                 <a className="nav__item" href="/#projects">Projects</a>
-                <a className="nav__item" href="/#contact">Contact</a>
+                <a className="nav__item" href="/#contact">Contact me</a>
             </div>
             <SideBar />
             <FontAwesomeIcon

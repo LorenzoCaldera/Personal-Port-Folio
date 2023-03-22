@@ -38,6 +38,7 @@
   .form__item {
     padding: 1rem;
     border: 2px solid;
+    position: relative;
     border-radius: 10px;
   }
 
@@ -130,7 +131,7 @@
     border-radius: 50%;
     display: inline-block;
     position: absolute;
-    background-color: red;
+    background-color: #CC0000;
     font-size: 15px;
     font-weight: 1000;
   }

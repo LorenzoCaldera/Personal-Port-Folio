@@ -1,4 +1,5 @@
 import React from "react"
+import i18next from "i18next"
 
 const languages = [
     {
@@ -24,16 +25,17 @@ const languages = [
 ]
 
 function ChooseLanguage() {
-    const changeLanguage = (language) => {
-        document.querySelector("html").lang = language
-        console.log("you choose: " + document.querySelector("html").lang)
-    }
-
     return (
         <span id="languages">
             <ul>
                 {languages.map(({ name, code }) => (
-                    <li key={name} onClick={() => changeLanguage(code)}>{name}</li>
+                    <li
+                        key={name}
+                        onClick={() => {
+                            i18next.changeLanguage(code)
+                            document.querySelector("html").lang = code
+                        }}
+                    >{name}</li>
                 ))}
             </ul>
         </span>
