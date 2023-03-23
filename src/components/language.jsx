@@ -25,6 +25,8 @@ const languages = [
 ]
 
 function ChooseLanguage() {
+    const [currentLanguage, setLanguage] = React.useState("")
+
     return (
         <span id="languages">
             <ul>
@@ -33,8 +35,10 @@ function ChooseLanguage() {
                         key={name}
                         onClick={() => {
                             i18next.changeLanguage(code)
+                            setLanguage(code)
                             document.querySelector("html").lang = code
                         }}
+                        className={currentLanguage === code ? "selected" : ""}
                     >{name}</li>
                 ))}
             </ul>
