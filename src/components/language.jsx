@@ -662,7 +662,21 @@ function ChooseLanguage() {
                             document.querySelector("html").lang = code
                         }}
                         className={currentLanguage === code ? "selected" : ""}
-                    ><Flag />{name}</li>
+                    >
+                        <div
+                            style={{
+                                display: "flex",
+                                textAlign: "center",
+                                justifyContent: "center"
+                            }}
+                        >
+                            <Flag />
+                            <p style={{
+                                fontSize: "1.1rem",
+                                marginLeft: "1rem"
+                            }}>{name}</p>
+                        </div>
+                    </li>
                 ))}
             </ul>
         </span>
