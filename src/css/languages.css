@@ -16,7 +16,7 @@
 #languages ul {
     text-align: center;
     list-style-type: none;
-    width: 10rem;
+    width: 12rem;
     margin: 2rem 0;
     padding: 0;
 }
@@ -29,6 +29,10 @@
     padding: 1rem 0;
     transition: background-color 1s, color .3s;
 }
+
+#languages ul li svg {
+    width: 40px
+}    
 
 #languages ul li::after {
     content: '';
@@ -54,7 +58,7 @@
 
 @keyframes openLanguage {
     from { height: 0; }
-    to { height: 24rem; }
+    to { height: 30rem; }
 }
 
 @media (max-width: 600px) {
