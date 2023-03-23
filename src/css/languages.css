@@ -43,13 +43,13 @@
     -webkit-animation: gradient-circles 3s ease infinite;
 }
 
-#languages ul li:hover::after {
-    width: calc(100% - 4rem);
+#languages ul li:hover::after, .selected::after {
+    width: calc(100% - 4rem) !important;
 }
 
-#languages ul li:hover {
+#languages ul li:hover, .selected {
     background-color: var(--c-yellow);
-    color: var(--c-black);
+    color: var(--c-black) !important;
 }
 
 @keyframes openLanguage {
