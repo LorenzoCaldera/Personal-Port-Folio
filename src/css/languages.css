@@ -16,7 +16,7 @@
 #languages ul {
     text-align: center;
     list-style-type: none;
-    width: 10rem;
+    width: 12rem;
     margin: 2rem 0;
     padding: 0;
 }
@@ -26,9 +26,13 @@
     width: 75%;
     color: var(--background);
     border-radius: 10px;
-    padding: 1rem 0;
+    padding: .3rem 0;
     transition: background-color 1s, color .3s;
 }
+
+#languages ul li svg {
+    width: 40px
+}    
 
 #languages ul li::after {
     content: '';
@@ -43,18 +47,18 @@
     -webkit-animation: gradient-circles 3s ease infinite;
 }
 
-#languages ul li:hover::after {
-    width: calc(100% - 4rem);
+#languages ul li:hover::after, .selected::after {
+    width: calc(100% - 4rem) !important;
 }
 
-#languages ul li:hover {
+#languages ul li:hover, .selected {
     background-color: var(--c-yellow);
-    color: var(--c-black);
+    color: var(--c-black) !important;
 }
 
 @keyframes openLanguage {
     from { height: 0; }
-    to { height: 24rem; }
+    to { height: 30rem; }
 }
 
 @media (max-width: 600px) {
