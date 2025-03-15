@@ -23,26 +23,30 @@ function Projects() {
                     return <li key={Math.random()}>
                         <div>
                             <header>
-                                <FontAwesomeIcon icon={el.icon}/>
+                                <FontAwesomeIcon icon={el.icon} />
                                 <h3>{el.name}</h3>
                             </header>
                             <p className="description">{el.description}</p>
                             <div className="tags">
                                 {el.tags.map(tag => {
                                     return <div key={Math.random()}>
-                                        <FontAwesomeIcon icon={faCircle}/>
+                                        <FontAwesomeIcon icon={faCircle} />
                                         <p>{tag}</p>
                                     </div>
                                 })}
                             </div>
                         </div>
                         <div className="projects__buttons">
-                            <button className="code-btn">
-                                <a href={el.links.github}>GitHub</a>
-                            </button>
-                            <button className="visit-btn">
-                                <a href={el.links.url}>View</a>
-                            </button>
+                            <a href={el.links.github} target="_blank">
+                                <button className="code-btn">
+                                    GitHub
+                                </button>
+                            </a>
+                            <a href={el.links.url} target="_blank">
+                                <button className="visit-btn">
+                                    View
+                                </button>
+                            </a>
                         </div>
                     </li>
                 })}
